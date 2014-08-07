@@ -10,6 +10,7 @@
 #import "ZHViewController.h"
 #import "ZHMainViewController.h"
 #import "M2_MainViewController.h"
+#import "LSMainViewController.h"
 
 #import "Theme.h"
 #import "Customer.h"
@@ -151,6 +152,11 @@
         case 2:
         {
             vc = [[M2_MainViewController alloc] initWithNibName:@"M2_MainViewController" bundle:nil];
+            break;
+        }
+        case 3:
+        {
+            vc = [[LSMainViewController alloc] initWithNibName:@"LSMainViewController" bundle:nil];
             break;
         }
         default:

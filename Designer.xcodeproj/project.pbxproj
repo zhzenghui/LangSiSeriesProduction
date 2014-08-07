@@ -486,23 +486,6 @@
 		C0D2B535196401AD00E206AC /* ZHEditCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D2B531196401AD00E206AC /* ZHEditCustomerViewController.xib */; };
 		C0D3B54F19932E8100DCC498 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B54D19932E8100DCC498 /* theme.plist */; };
 		C0D3B55019932E8100DCC498 /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B54E19932E8100DCC498 /* user.plist */; };
-		C0D3B58A19932EFA00DCC498 /* 雅致-扉页-bg00.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57819932EFA00DCC498 /* 雅致-扉页-bg00.png */; };
-		C0D3B58B19932EFA00DCC498 /* 雅致-扉页-bg01.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57919932EFA00DCC498 /* 雅致-扉页-bg01.png */; };
-		C0D3B58C19932EFA00DCC498 /* 雅致-扉页-bg02.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57A19932EFA00DCC498 /* 雅致-扉页-bg02.png */; };
-		C0D3B58D19932EFA00DCC498 /* 雅致-扉页-bg03.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57B19932EFA00DCC498 /* 雅致-扉页-bg03.png */; };
-		C0D3B58E19932EFA00DCC498 /* 按钮-bejoy.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57D19932EFA00DCC498 /* 按钮-bejoy.png */; };
-		C0D3B58F19932EFA00DCC498 /* 按钮-五金.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57E19932EFA00DCC498 /* 按钮-五金.png */; };
-		C0D3B59019932EFA00DCC498 /* 按钮-产品.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B57F19932EFA00DCC498 /* 按钮-产品.png */; };
-		C0D3B59119932EFA00DCC498 /* 按钮-价格.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58019932EFA00DCC498 /* 按钮-价格.png */; };
-		C0D3B59219932EFA00DCC498 /* 按钮-历史.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58119932EFA00DCC498 /* 按钮-历史.png */; };
-		C0D3B59319932EFA00DCC498 /* 按钮-安全.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58219932EFA00DCC498 /* 按钮-安全.png */; };
-		C0D3B59419932EFA00DCC498 /* 雅致-首页-bg01.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58319932EFA00DCC498 /* 雅致-首页-bg01.png */; };
-		C0D3B59519932EFA00DCC498 /* 雅致-首页-bg02.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58419932EFA00DCC498 /* 雅致-首页-bg02.png */; };
-		C0D3B59619932EFA00DCC498 /* 雅致-首页-bg03.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58519932EFA00DCC498 /* 雅致-首页-bg03.png */; };
-		C0D3B59719932EFA00DCC498 /* 雅致-首页-bg04.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58619932EFA00DCC498 /* 雅致-首页-bg04.png */; };
-		C0D3B59819932EFA00DCC498 /* 雅致-首页-bg05.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58719932EFA00DCC498 /* 雅致-首页-bg05.png */; };
-		C0D3B59919932EFA00DCC498 /* 雅致-首页-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58819932EFA00DCC498 /* 雅致-首页-坐标.jpg */; };
-		C0D3B59A19932EFA00DCC498 /* 雅致-首页导航条-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B58919932EFA00DCC498 /* 雅致-首页导航条-bg.png */; };
 		C0D3B59D19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
 		C0D3B59E19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
 		C0D3B59F19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
@@ -524,6 +507,58 @@
 		C0D3B5C119933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
 		C0D3B5C219933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
 		C0D3B5C319933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
+		C0D3B5D819933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C619933F2500DCC498 /* 雅致-扉页-bg00@2x.png */; };
+		C0D3B5D919933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C619933F2500DCC498 /* 雅致-扉页-bg00@2x.png */; };
+		C0D3B5DA19933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C619933F2500DCC498 /* 雅致-扉页-bg00@2x.png */; };
+		C0D3B5DB19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C719933F2500DCC498 /* 雅致-扉页-bg01@2x.png */; };
+		C0D3B5DC19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C719933F2500DCC498 /* 雅致-扉页-bg01@2x.png */; };
+		C0D3B5DD19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C719933F2500DCC498 /* 雅致-扉页-bg01@2x.png */; };
+		C0D3B5DE19933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C819933F2500DCC498 /* 雅致-扉页-bg02@2x.png */; };
+		C0D3B5DF19933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C819933F2500DCC498 /* 雅致-扉页-bg02@2x.png */; };
+		C0D3B5E019933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C819933F2500DCC498 /* 雅致-扉页-bg02@2x.png */; };
+		C0D3B5E119933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C919933F2500DCC498 /* 雅致-扉页-bg03@2x.png */; };
+		C0D3B5E219933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C919933F2500DCC498 /* 雅致-扉页-bg03@2x.png */; };
+		C0D3B5E319933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5C919933F2500DCC498 /* 雅致-扉页-bg03@2x.png */; };
+		C0D3B5E419933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CB19933F2500DCC498 /* 按钮-bejoy@2x.png */; };
+		C0D3B5E519933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CB19933F2500DCC498 /* 按钮-bejoy@2x.png */; };
+		C0D3B5E619933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CB19933F2500DCC498 /* 按钮-bejoy@2x.png */; };
+		C0D3B5E719933F2500DCC498 /* 按钮-五金@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CC19933F2500DCC498 /* 按钮-五金@2x.png */; };
+		C0D3B5E819933F2500DCC498 /* 按钮-五金@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CC19933F2500DCC498 /* 按钮-五金@2x.png */; };
+		C0D3B5E919933F2500DCC498 /* 按钮-五金@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CC19933F2500DCC498 /* 按钮-五金@2x.png */; };
+		C0D3B5EA19933F2500DCC498 /* 按钮-产品@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CD19933F2500DCC498 /* 按钮-产品@2x.png */; };
+		C0D3B5EB19933F2500DCC498 /* 按钮-产品@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CD19933F2500DCC498 /* 按钮-产品@2x.png */; };
+		C0D3B5EC19933F2500DCC498 /* 按钮-产品@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CD19933F2500DCC498 /* 按钮-产品@2x.png */; };
+		C0D3B5ED19933F2500DCC498 /* 按钮-价格@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CE19933F2500DCC498 /* 按钮-价格@2x.png */; };
+		C0D3B5EE19933F2500DCC498 /* 按钮-价格@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CE19933F2500DCC498 /* 按钮-价格@2x.png */; };
+		C0D3B5EF19933F2500DCC498 /* 按钮-价格@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CE19933F2500DCC498 /* 按钮-价格@2x.png */; };
+		C0D3B5F019933F2500DCC498 /* 按钮-历史@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CF19933F2500DCC498 /* 按钮-历史@2x.png */; };
+		C0D3B5F119933F2500DCC498 /* 按钮-历史@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CF19933F2500DCC498 /* 按钮-历史@2x.png */; };
+		C0D3B5F219933F2500DCC498 /* 按钮-历史@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5CF19933F2500DCC498 /* 按钮-历史@2x.png */; };
+		C0D3B5F319933F2500DCC498 /* 按钮-安全@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D019933F2500DCC498 /* 按钮-安全@2x.png */; };
+		C0D3B5F419933F2500DCC498 /* 按钮-安全@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D019933F2500DCC498 /* 按钮-安全@2x.png */; };
+		C0D3B5F519933F2500DCC498 /* 按钮-安全@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D019933F2500DCC498 /* 按钮-安全@2x.png */; };
+		C0D3B5F619933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D119933F2500DCC498 /* 雅致-首页-bg01@2x.png */; };
+		C0D3B5F719933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D119933F2500DCC498 /* 雅致-首页-bg01@2x.png */; };
+		C0D3B5F819933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D119933F2500DCC498 /* 雅致-首页-bg01@2x.png */; };
+		C0D3B5F919933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D219933F2500DCC498 /* 雅致-首页-bg02@2x.png */; };
+		C0D3B5FA19933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D219933F2500DCC498 /* 雅致-首页-bg02@2x.png */; };
+		C0D3B5FB19933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D219933F2500DCC498 /* 雅致-首页-bg02@2x.png */; };
+		C0D3B5FC19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D319933F2500DCC498 /* 雅致-首页-bg03@2x.png */; };
+		C0D3B5FD19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D319933F2500DCC498 /* 雅致-首页-bg03@2x.png */; };
+		C0D3B5FE19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D319933F2500DCC498 /* 雅致-首页-bg03@2x.png */; };
+		C0D3B5FF19933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D419933F2500DCC498 /* 雅致-首页-bg04@2x.png */; };
+		C0D3B60019933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D419933F2500DCC498 /* 雅致-首页-bg04@2x.png */; };
+		C0D3B60119933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D419933F2500DCC498 /* 雅致-首页-bg04@2x.png */; };
+		C0D3B60219933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D519933F2500DCC498 /* 雅致-首页-bg05@2x.png */; };
+		C0D3B60319933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D519933F2500DCC498 /* 雅致-首页-bg05@2x.png */; };
+		C0D3B60419933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D519933F2500DCC498 /* 雅致-首页-bg05@2x.png */; };
+		C0D3B60519933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */; };
+		C0D3B60619933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */; };
+		C0D3B60719933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */; };
+		C0D3B60819933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */; };
+		C0D3B60919933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */; };
+		C0D3B60A19933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */; };
+		C0D3B60C1993458E00DCC498 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D3B60B1993458E00DCC498 /* CoreMotion.framework */; };
 		C0D8B55F1957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D8B5601957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D97E1519503EC100BC046E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */; };
@@ -871,23 +906,6 @@
 		C0D2B531196401AD00E206AC /* ZHEditCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHEditCustomerViewController.xib; sourceTree = "<group>"; };
 		C0D3B54D19932E8100DCC498 /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
 		C0D3B54E19932E8100DCC498 /* user.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = user.plist; sourceTree = "<group>"; };
-		C0D3B57819932EFA00DCC498 /* 雅致-扉页-bg00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg00.png"; sourceTree = "<group>"; };
-		C0D3B57919932EFA00DCC498 /* 雅致-扉页-bg01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg01.png"; sourceTree = "<group>"; };
-		C0D3B57A19932EFA00DCC498 /* 雅致-扉页-bg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg02.png"; sourceTree = "<group>"; };
-		C0D3B57B19932EFA00DCC498 /* 雅致-扉页-bg03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg03.png"; sourceTree = "<group>"; };
-		C0D3B57D19932EFA00DCC498 /* 按钮-bejoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-bejoy.png"; sourceTree = "<group>"; };
-		C0D3B57E19932EFA00DCC498 /* 按钮-五金.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-五金.png"; sourceTree = "<group>"; };
-		C0D3B57F19932EFA00DCC498 /* 按钮-产品.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-产品.png"; sourceTree = "<group>"; };
-		C0D3B58019932EFA00DCC498 /* 按钮-价格.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-价格.png"; sourceTree = "<group>"; };
-		C0D3B58119932EFA00DCC498 /* 按钮-历史.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-历史.png"; sourceTree = "<group>"; };
-		C0D3B58219932EFA00DCC498 /* 按钮-安全.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-安全.png"; sourceTree = "<group>"; };
-		C0D3B58319932EFA00DCC498 /* 雅致-首页-bg01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg01.png"; sourceTree = "<group>"; };
-		C0D3B58419932EFA00DCC498 /* 雅致-首页-bg02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg02.png"; sourceTree = "<group>"; };
-		C0D3B58519932EFA00DCC498 /* 雅致-首页-bg03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg03.png"; sourceTree = "<group>"; };
-		C0D3B58619932EFA00DCC498 /* 雅致-首页-bg04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg04.png"; sourceTree = "<group>"; };
-		C0D3B58719932EFA00DCC498 /* 雅致-首页-bg05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg05.png"; sourceTree = "<group>"; };
-		C0D3B58819932EFA00DCC498 /* 雅致-首页-坐标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雅致-首页-坐标.jpg"; sourceTree = "<group>"; };
-		C0D3B58919932EFA00DCC498 /* 雅致-首页导航条-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页导航条-bg.png"; sourceTree = "<group>"; };
 		C0D3B59B19932F9B00DCC498 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		C0D3B59C19932F9B00DCC498 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		C0D3B5A61993380D00DCC498 /* LSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSMainViewController.h; path = Langsi/LSMainViewController.h; sourceTree = "<group>"; };
@@ -901,6 +919,24 @@
 		C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
 		C0D3B5B619933A3000DCC498 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
 		C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
+		C0D3B5C619933F2500DCC498 /* 雅致-扉页-bg00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg00@2x.png"; sourceTree = "<group>"; };
+		C0D3B5C719933F2500DCC498 /* 雅致-扉页-bg01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg01@2x.png"; sourceTree = "<group>"; };
+		C0D3B5C819933F2500DCC498 /* 雅致-扉页-bg02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg02@2x.png"; sourceTree = "<group>"; };
+		C0D3B5C919933F2500DCC498 /* 雅致-扉页-bg03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-扉页-bg03@2x.png"; sourceTree = "<group>"; };
+		C0D3B5CB19933F2500DCC498 /* 按钮-bejoy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-bejoy@2x.png"; sourceTree = "<group>"; };
+		C0D3B5CC19933F2500DCC498 /* 按钮-五金@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-五金@2x.png"; sourceTree = "<group>"; };
+		C0D3B5CD19933F2500DCC498 /* 按钮-产品@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-产品@2x.png"; sourceTree = "<group>"; };
+		C0D3B5CE19933F2500DCC498 /* 按钮-价格@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-价格@2x.png"; sourceTree = "<group>"; };
+		C0D3B5CF19933F2500DCC498 /* 按钮-历史@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-历史@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D019933F2500DCC498 /* 按钮-安全@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮-安全@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D119933F2500DCC498 /* 雅致-首页-bg01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg01@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D219933F2500DCC498 /* 雅致-首页-bg02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg02@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D319933F2500DCC498 /* 雅致-首页-bg03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg03@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D419933F2500DCC498 /* 雅致-首页-bg04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg04@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D519933F2500DCC498 /* 雅致-首页-bg05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg05@2x.png"; sourceTree = "<group>"; };
+		C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雅致-首页-坐标.jpg"; sourceTree = "<group>"; };
+		C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页导航条-bg@2x.png"; sourceTree = "<group>"; };
+		C0D3B60B1993458E00DCC498 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		C0D8B55E1957C77600497F65 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
 		C0D97E1319503EC100BC046E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -976,6 +1012,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D3B60C1993458E00DCC498 /* CoreMotion.framework in Frameworks */,
 				C07B1CFE198743A9008ACB0C /* Accelerate.framework in Frameworks */,
 				C06889AD196D432500B76E2E /* libz.1.2.5.dylib in Frameworks */,
 				C06889A8196D3FCF00B76E2E /* AddressBook.framework in Frameworks */,
@@ -1190,7 +1227,7 @@
 		C0409D60192A081D00E9E8B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C0D3B57619932EFA00DCC498 /* 切图 */,
+				C0D3B5C419933F2500DCC498 /* 切图 */,
 				C0D3B54D19932E8100DCC498 /* theme.plist */,
 				C0D3B54E19932E8100DCC498 /* user.plist */,
 				C07B0A06198F1F46009CADA4 /* entitlements */,
@@ -1226,6 +1263,7 @@
 		C04B0C2218C43EAA00CFD548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0D3B60B1993458E00DCC498 /* CoreMotion.framework */,
 				C0EC09F8197F75D200BB820B /* Accelerate.framework */,
 				C0EC09F6197F75C600BB820B /* OpenGLES.framework */,
 				C0408304197E65A100AA6EA4 /* GLKit.framework */,
@@ -1545,47 +1583,6 @@
 			name = entitlements;
 			sourceTree = "<group>";
 		};
-		C0D3B57619932EFA00DCC498 /* 切图 */ = {
-			isa = PBXGroup;
-			children = (
-				C0D3B57719932EFA00DCC498 /* 扉页 */,
-				C0D3B57C19932EFA00DCC498 /* 首页 */,
-			);
-			name = "切图";
-			path = "../../../../快盘/我收到的共享文件/lifeng@i-bejoy.com/BEJOY项目文档/朗斯项目/朗斯系列产品app/切图";
-			sourceTree = "<group>";
-		};
-		C0D3B57719932EFA00DCC498 /* 扉页 */ = {
-			isa = PBXGroup;
-			children = (
-				C0D3B57819932EFA00DCC498 /* 雅致-扉页-bg00.png */,
-				C0D3B57919932EFA00DCC498 /* 雅致-扉页-bg01.png */,
-				C0D3B57A19932EFA00DCC498 /* 雅致-扉页-bg02.png */,
-				C0D3B57B19932EFA00DCC498 /* 雅致-扉页-bg03.png */,
-			);
-			path = "扉页";
-			sourceTree = "<group>";
-		};
-		C0D3B57C19932EFA00DCC498 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				C0D3B57D19932EFA00DCC498 /* 按钮-bejoy.png */,
-				C0D3B57E19932EFA00DCC498 /* 按钮-五金.png */,
-				C0D3B57F19932EFA00DCC498 /* 按钮-产品.png */,
-				C0D3B58019932EFA00DCC498 /* 按钮-价格.png */,
-				C0D3B58119932EFA00DCC498 /* 按钮-历史.png */,
-				C0D3B58219932EFA00DCC498 /* 按钮-安全.png */,
-				C0D3B58319932EFA00DCC498 /* 雅致-首页-bg01.png */,
-				C0D3B58419932EFA00DCC498 /* 雅致-首页-bg02.png */,
-				C0D3B58519932EFA00DCC498 /* 雅致-首页-bg03.png */,
-				C0D3B58619932EFA00DCC498 /* 雅致-首页-bg04.png */,
-				C0D3B58719932EFA00DCC498 /* 雅致-首页-bg05.png */,
-				C0D3B58819932EFA00DCC498 /* 雅致-首页-坐标.jpg */,
-				C0D3B58919932EFA00DCC498 /* 雅致-首页导航条-bg.png */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
 		C0D3B5A519932FBF00DCC498 /* Langsi */ = {
 			isa = PBXGroup;
 			children = (
@@ -1609,6 +1606,46 @@
 				C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */,
 			);
 			path = HUAnimator;
+			sourceTree = "<group>";
+		};
+		C0D3B5C419933F2500DCC498 /* 切图 */ = {
+			isa = PBXGroup;
+			children = (
+				C0D3B5C519933F2500DCC498 /* 扉页 */,
+				C0D3B5CA19933F2500DCC498 /* 首页 */,
+			);
+			path = "切图";
+			sourceTree = "<group>";
+		};
+		C0D3B5C519933F2500DCC498 /* 扉页 */ = {
+			isa = PBXGroup;
+			children = (
+				C0D3B5C619933F2500DCC498 /* 雅致-扉页-bg00@2x.png */,
+				C0D3B5C719933F2500DCC498 /* 雅致-扉页-bg01@2x.png */,
+				C0D3B5C819933F2500DCC498 /* 雅致-扉页-bg02@2x.png */,
+				C0D3B5C919933F2500DCC498 /* 雅致-扉页-bg03@2x.png */,
+			);
+			path = "扉页";
+			sourceTree = "<group>";
+		};
+		C0D3B5CA19933F2500DCC498 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				C0D3B5CB19933F2500DCC498 /* 按钮-bejoy@2x.png */,
+				C0D3B5CC19933F2500DCC498 /* 按钮-五金@2x.png */,
+				C0D3B5CD19933F2500DCC498 /* 按钮-产品@2x.png */,
+				C0D3B5CE19933F2500DCC498 /* 按钮-价格@2x.png */,
+				C0D3B5CF19933F2500DCC498 /* 按钮-历史@2x.png */,
+				C0D3B5D019933F2500DCC498 /* 按钮-安全@2x.png */,
+				C0D3B5D119933F2500DCC498 /* 雅致-首页-bg01@2x.png */,
+				C0D3B5D219933F2500DCC498 /* 雅致-首页-bg02@2x.png */,
+				C0D3B5D319933F2500DCC498 /* 雅致-首页-bg03@2x.png */,
+				C0D3B5D419933F2500DCC498 /* 雅致-首页-bg04@2x.png */,
+				C0D3B5D519933F2500DCC498 /* 雅致-首页-bg05@2x.png */,
+				C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */,
+				C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */,
+			);
+			path = "首页";
 			sourceTree = "<group>";
 		};
 		C0FF683119629F46004EA76F /* FastAnimationWithPop */ = {
@@ -1793,23 +1830,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D3B5FE19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */,
 				C02BC0071988B727005EC171 /* AccessCell.xib in Resources */,
 				C02BC0081988B727005EC171 /* PhotosViewController.xib in Resources */,
+				C0D3B5E919933F2500DCC498 /* 按钮-五金@2x.png in Resources */,
+				C0D3B60419933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */,
+				C0D3B60119933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */,
 				C02BC0091988B727005EC171 /* DesginerCellV.xib in Resources */,
 				C02BC00A1988B727005EC171 /* M1_PaintViewController.xib in Resources */,
+				C0D3B5F219933F2500DCC498 /* 按钮-历史@2x.png in Resources */,
 				C02BC00B1988B727005EC171 /* CaseCell.xib in Resources */,
 				C02BC00C1988B727005EC171 /* data in Resources */,
 				C02BC00D1988B727005EC171 /* M1_GroupPhotoViewController.xib in Resources */,
+				C0D3B5FB19933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */,
 				C02BC00E1988B727005EC171 /* ZHNoteViewController.xib in Resources */,
+				C0D3B5DA19933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */,
 				C02BC00F1988B727005EC171 /* Images.xcassets in Resources */,
+				C0D3B5F819933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */,
 				C05DFBD71989FAE300F8CAFE /* M2_DesignerViewController.xib in Resources */,
+				C0D3B60719933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */,
 				C075817A198B590D0099D750 /* M2_CasesViewController.xib in Resources */,
 				C02BC0101988B727005EC171 /* ZHCustomerViewController.xib in Resources */,
+				C0D3B60A19933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */,
+				C0D3B5E319933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */,
 				C02BC1B01989019B005EC171 /* M2_PaintViewController.xib in Resources */,
+				C0D3B5E019933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */,
 				C02BC0111988B727005EC171 /* ZHEditNoteViewController.xib in Resources */,
+				C0D3B5E619933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */,
 				C02BC0121988B727005EC171 /* ZHMainViewController.xib in Resources */,
+				C0D3B5EF19933F2500DCC498 /* 按钮-价格@2x.png in Resources */,
+				C0D3B5F519933F2500DCC498 /* 按钮-安全@2x.png in Resources */,
 				C02BC0131988B727005EC171 /* InfoPlist.strings in Resources */,
 				C02BC0141988B727005EC171 /* DesginerCell.xib in Resources */,
+				C0D3B5DD19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */,
+				C0D3B5EC19933F2500DCC498 /* 按钮-产品@2x.png in Resources */,
 				C02BC0151988B727005EC171 /* WKKViewController.xib in Resources */,
 				C02BC03A1988B9EA005EC171 /* M2_MainViewController.xib in Resources */,
 				C02BC0161988B727005EC171 /* CustomerCell.xib in Resources */,
@@ -1823,45 +1877,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D3B59A19932EFA00DCC498 /* 雅致-首页导航条-bg.png in Resources */,
+				C0D3B5ED19933F2500DCC498 /* 按钮-价格@2x.png in Resources */,
 				C04B0CD218C43F6600CFD548 /* AccessCell.xib in Resources */,
-				C0D3B58C19932EFA00DCC498 /* 雅致-扉页-bg02.png in Resources */,
+				C0D3B5EA19933F2500DCC498 /* 按钮-产品@2x.png in Resources */,
+				C0D3B5F619933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */,
 				C030A93B196D0173006A536C /* PhotosViewController.xib in Resources */,
-				C0D3B59419932EFA00DCC498 /* 雅致-首页-bg01.png in Resources */,
 				C04B0CDC18C43F6600CFD548 /* DesginerCellV.xib in Resources */,
-				C0D3B58A19932EFA00DCC498 /* 雅致-扉页-bg00.png in Resources */,
+				C0D3B60819933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */,
 				C050DCD5195168A1000E0F03 /* M1_PaintViewController.xib in Resources */,
+				C0D3B5FF19933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */,
+				C0D3B60519933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */,
 				C04B0CD818C43F6600CFD548 /* CaseCell.xib in Resources */,
-				C0D3B58B19932EFA00DCC498 /* 雅致-扉页-bg01.png in Resources */,
-				C0D3B59519932EFA00DCC498 /* 雅致-首页-bg02.png in Resources */,
 				C056F58A18E27FC4005447CA /* data in Resources */,
-				C0D3B59619932EFA00DCC498 /* 雅致-首页-bg03.png in Resources */,
-				C0D3B59319932EFA00DCC498 /* 按钮-安全.png in Resources */,
 				C0D3B55019932E8100DCC498 /* user.plist in Resources */,
 				C0D3B54F19932E8100DCC498 /* theme.plist in Resources */,
+				C0D3B5F919933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */,
 				C0E3781719515B64005DFC04 /* M1_GroupPhotoViewController.xib in Resources */,
-				C0D3B59719932EFA00DCC498 /* 雅致-首页-bg04.png in Resources */,
+				C0D3B5DB19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */,
+				C0D3B5F019933F2500DCC498 /* 按钮-历史@2x.png in Resources */,
 				C0300AD3195BC58100E3AC09 /* ZHNoteViewController.xib in Resources */,
-				C0D3B59919932EFA00DCC498 /* 雅致-首页-坐标.jpg in Resources */,
 				C04B0C3C18C43EAA00CFD548 /* Images.xcassets in Resources */,
 				C0300ADA195BCA6200E3AC09 /* ZHCustomerViewController.xib in Resources */,
 				C0C090971963B25900C8F085 /* ZHEditNoteViewController.xib in Resources */,
-				C0D3B58E19932EFA00DCC498 /* 按钮-bejoy.png in Resources */,
 				C0FE61A419501607002972FB /* ZHMainViewController.xib in Resources */,
-				C0D3B59019932EFA00DCC498 /* 按钮-产品.png in Resources */,
+				C0D3B5E419933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */,
 				C04B0C2E18C43EAA00CFD548 /* InfoPlist.strings in Resources */,
-				C0D3B59819932EFA00DCC498 /* 雅致-首页-bg05.png in Resources */,
-				C0D3B58F19932EFA00DCC498 /* 按钮-五金.png in Resources */,
-				C0D3B59119932EFA00DCC498 /* 按钮-价格.png in Resources */,
 				C02BC0381988B9EA005EC171 /* M2_MainViewController.xib in Resources */,
 				C04B0CDA18C43F6600CFD548 /* DesginerCell.xib in Resources */,
-				C0D3B59219932EFA00DCC498 /* 按钮-历史.png in Resources */,
+				C0D3B5D819933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */,
+				C0D3B60219933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */,
+				C0D3B5FC19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */,
+				C0D3B5E119933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */,
 				C0F452E51965483100AE19D5 /* WKKViewController.xib in Resources */,
 				C02BC1AE1989019B005EC171 /* M2_PaintViewController.xib in Resources */,
+				C0D3B5F319933F2500DCC498 /* 按钮-安全@2x.png in Resources */,
 				C00DA9D91964F07600050B30 /* CustomerCell.xib in Resources */,
 				C0F9D2F6196BCC9600C1F0DB /* PhotoCell.xib in Resources */,
-				C0D3B58D19932EFA00DCC498 /* 雅致-扉页-bg03.png in Resources */,
 				C0D3B5AC1993380D00DCC498 /* LSMainViewController.xib in Resources */,
+				C0D3B5E719933F2500DCC498 /* 按钮-五金@2x.png in Resources */,
+				C0D3B5DE19933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */,
 				C05DFBD51989FAE300F8CAFE /* M2_DesignerViewController.xib in Resources */,
 				C0D2B534196401AD00E206AC /* ZHEditCustomerViewController.xib in Resources */,
 			);
@@ -1881,14 +1935,17 @@
 			files = (
 				C08324B71952C21900297E63 /* AccessCell.xib in Resources */,
 				C030A93C196D0173006A536C /* PhotosViewController.xib in Resources */,
+				C0D3B5F719933F2500DCC498 /* 雅致-首页-bg01@2x.png in Resources */,
 				C0F9D2F7196BCC9600C1F0DB /* PhotoCell.xib in Resources */,
 				C0D2B535196401AD00E206AC /* ZHEditCustomerViewController.xib in Resources */,
 				C0300ADB195BCA6200E3AC09 /* ZHCustomerViewController.xib in Resources */,
 				C00DA9DA1964F07600050B30 /* CustomerCell.xib in Resources */,
+				C0D3B5EE19933F2500DCC498 /* 按钮-价格@2x.png in Resources */,
 				C08324B81952C21900297E63 /* DesginerCellV.xib in Resources */,
 				C0C090981963B25900C8F085 /* ZHEditNoteViewController.xib in Resources */,
 				C08324B91952C21900297E63 /* M1_PaintViewController.xib in Resources */,
 				C08324BA1952C21900297E63 /* CaseCell.xib in Resources */,
+				C0D3B5DF19933F2500DCC498 /* 雅致-扉页-bg02@2x.png in Resources */,
 				C0300AD4195BC58100E3AC09 /* ZHNoteViewController.xib in Resources */,
 				C08324BB1952C21900297E63 /* data in Resources */,
 				C08324BC1952C21900297E63 /* M1_GroupPhotoViewController.xib in Resources */,
@@ -1896,10 +1953,24 @@
 				C08324BD1952C21900297E63 /* Images.xcassets in Resources */,
 				C08324BE1952C21900297E63 /* ZHMainViewController.xib in Resources */,
 				C02BC1AF1989019B005EC171 /* M2_PaintViewController.xib in Resources */,
+				C0D3B60319933F2500DCC498 /* 雅致-首页-bg05@2x.png in Resources */,
+				C0D3B5DC19933F2500DCC498 /* 雅致-扉页-bg01@2x.png in Resources */,
+				C0D3B5E519933F2500DCC498 /* 按钮-bejoy@2x.png in Resources */,
+				C0D3B5EB19933F2500DCC498 /* 按钮-产品@2x.png in Resources */,
+				C0D3B60919933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */,
+				C0D3B60619933F2500DCC498 /* 雅致-首页-坐标.jpg in Resources */,
+				C0D3B5FA19933F2500DCC498 /* 雅致-首页-bg02@2x.png in Resources */,
+				C0D3B5E219933F2500DCC498 /* 雅致-扉页-bg03@2x.png in Resources */,
+				C0D3B60019933F2500DCC498 /* 雅致-首页-bg04@2x.png in Resources */,
+				C0D3B5F119933F2500DCC498 /* 按钮-历史@2x.png in Resources */,
+				C0D3B5D919933F2500DCC498 /* 雅致-扉页-bg00@2x.png in Resources */,
+				C0D3B5E819933F2500DCC498 /* 按钮-五金@2x.png in Resources */,
 				C08324BF1952C21900297E63 /* InfoPlist.strings in Resources */,
 				C0F452E61965483100AE19D5 /* WKKViewController.xib in Resources */,
 				C05DFBD61989FAE300F8CAFE /* M2_DesignerViewController.xib in Resources */,
+				C0D3B5FD19933F2500DCC498 /* 雅致-首页-bg03@2x.png in Resources */,
 				C0D3B5AD1993380D00DCC498 /* LSMainViewController.xib in Resources */,
+				C0D3B5F419933F2500DCC498 /* 按钮-安全@2x.png in Resources */,
 				C08324C01952C21900297E63 /* DesginerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

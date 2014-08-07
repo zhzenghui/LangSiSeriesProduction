@@ -10,4 +10,10 @@
 
 @interface LSMainViewController : LSViewController
 
+
+
+// 扉页
+@property (strong, nonatomic) IBOutlet UIView *feiYeView;
+@property (weak, nonatomic) IBOutlet UIImageView *suoImageView;
+
 @end

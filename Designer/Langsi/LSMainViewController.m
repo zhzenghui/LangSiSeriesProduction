@@ -7,6 +7,9 @@
 //
 
 #import "LSMainViewController.h"
+#import <CoreMotion/CoreMotion.h>
+
+
 
 @interface LSMainViewController ()
 
@@ -23,16 +26,32 @@
     return self;
 }
 
+- (void)loadView
+{
+    [super loadView ];
+    
+    
+    self.feiYeView.frame =  self.view.frame;
+    [self.view addSubview:self.feiYeView];
+    
+    
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    CMMotionManager *motionManager = [[CMMotionManager alloc]init];
+
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
