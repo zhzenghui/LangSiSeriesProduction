@@ -10,6 +10,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import "ZHAppDelegate.h"
 
+#import "HUTransitionVerticalLinesAnimator.h"
 
 
 @interface LSMainViewController ()
@@ -17,6 +18,21 @@
 @end
 
 @implementation LSMainViewController
+
+#pragma mark - action 
+
+- (void)feYeAnimation
+{
+    
+}
+
+- (void)mainAnimation
+{
+    HUTransitionVerticalLinesAnimator  *animator = [[HUTransitionVerticalLinesAnimator alloc] init];
+    [animator animateTransition:self.imgV1 toVC:self.imgV2 containerView:self.contentView];
+}
+
+#pragma mark - view
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,8 +64,7 @@
     
 
     
-    
-    
+    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(mainAnimation) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,6 +118,13 @@ static const NSTimeInterval deviceMotionMin = 0.1;
     [UIView animateWithDuration:KLongDuration animations:^{
         
         self.feiYeView.alpha = 0;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            
+            [self mainAnimation];
+        }
+
+
     }];
 
 }

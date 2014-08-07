@@ -20,7 +20,7 @@
 }
 
 
-#define VLINEWIDTH 80.0
+#define VLINEWIDTH  256
 /**
  verticalLinesTransition
  snapshots the outgoing view, slices it into vertical lines, then animates them at random rates off the screen.
@@ -91,6 +91,67 @@
     }];
     
 }
+
+
+- (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC containerView:(UIView *)containerView{
+ 
+    UIView *mainSnap = [fromVC snapshotViewAfterScreenUpdates:NO];
+    //cut it into vertical slices
+    NSArray *outgoingLineViews = [self cutView:mainSnap intoSlicesOfWidth:VLINEWIDTH];
+    
+    //add the slices to the content view.
+    for (UIView *v in outgoingLineViews) {
+        [containerView addSubview:v];
+    }
+    
+    
+    UIView *toView = toVC ;
+    [containerView addSubview:toView];
+    
+    
+    CGFloat toViewStartY = toView.frame.origin.y;
+    toView.alpha = 0;
+    fromVC.hidden = YES;
+    
+    
+    [UIView animateWithDuration:VLANIMATION_TIME1 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        //This is basically a hack to get the incoming view to render before I snapshot it.
+    } completion:^(BOOL finished) {
+        
+        toVC.alpha = 1;
+        UIView *mainInSnap = [toView snapshotViewAfterScreenUpdates:YES];
+        //cut it into vertical slices
+        NSArray *incomingLineViews = [self cutView:mainInSnap intoSlicesOfWidth:VLINEWIDTH];
+        
+        //move the slices in to start position (mess them up)
+        [self repositionViewSlices:incomingLineViews moveFirstFrameUp:NO];
+        
+        //add the slices to the content view.
+        for (UIView *v in incomingLineViews) {
+            [containerView addSubview:v];
+        }
+        toView.hidden = YES;
+        
+        [UIView animateWithDuration:VLANIMATION_TIME2 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            [self repositionViewSlices:outgoingLineViews moveFirstFrameUp:YES];
+            [self resetViewSlices:incomingLineViews toYOrigin:toViewStartY];
+        } completion:^(BOOL finished) {
+            fromVC.hidden = NO;
+            toView.hidden = NO;
+            [toView setNeedsUpdateConstraints];
+            for (UIView *v in incomingLineViews) {
+                [v removeFromSuperview];
+            }
+            for (UIView *v in outgoingLineViews) {
+                [v removeFromSuperview];
+            }
+//            [transitionContext completeTransition:YES];
+        }];
+        
+    }];
+    
+}
+
 
 /**
  cuts a \a view into an array of smaller views of \a width

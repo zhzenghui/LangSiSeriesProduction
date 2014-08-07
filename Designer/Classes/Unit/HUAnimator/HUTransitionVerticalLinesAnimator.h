@@ -11,4 +11,9 @@
 
 @interface HUTransitionVerticalLinesAnimator : HUTransitionAnimator
 
+
+- (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC containerView:(UIView *)containerView;
+
+
+
 @end

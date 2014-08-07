@@ -6,29 +6,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSMainViewController">
             <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="03Y-f9-KYC"/>
                 <outlet property="feiYeView" destination="vQx-s3-zDN" id="8iP-Wm-37L"/>
+                <outlet property="imgV1" destination="eLo-FC-ZKP" id="moE-cC-bcO"/>
+                <outlet property="imgV2" destination="UZE-4h-tkO" id="iv8-rf-uqY"/>
                 <outlet property="suoImageView" destination="v88-WA-g7I" id="zxA-rY-LYK"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="mMC-JN-Xl7" id="Fev-dS-ijy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页-bg01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UZE-4h-tkO">
-                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页导航条-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xrB-J8-wr0">
-                    <rect key="frame" x="0.0" y="-20" width="55" height="768"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-        </view>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vQx-s3-zDN">
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -64,6 +50,36 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
         </view>
+        <view contentMode="scaleToFill" id="mMC-JN-Xl7">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页-bg01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UZE-4h-tkO">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页-bg05.png" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-FC-ZKP">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页导航条-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xrB-J8-wr0">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="768"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
     </objects>
     <resources>
         <image name="雅致-扉页-bg00.png" width="1024" height="768"/>
@@ -71,6 +87,7 @@
         <image name="雅致-扉页-bg02.png" width="1024" height="256"/>
         <image name="雅致-扉页-bg03.png" width="1024" height="256"/>
         <image name="雅致-首页-bg01.png" width="1024" height="768"/>
+        <image name="雅致-首页-bg05.png" width="1024" height="768"/>
         <image name="雅致-首页导航条-bg.png" width="55" height="768"/>
     </resources>
 </document>
