@@ -506,9 +506,12 @@
 		C0D3B59D19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
 		C0D3B59E19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
 		C0D3B59F19932F9B00DCC498 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B59C19932F9B00DCC498 /* LSViewController.m */; };
-		C0D3B5A219932FBC00DCC498 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A119932FBC00DCC498 /* MainViewController.m */; };
-		C0D3B5A319932FBC00DCC498 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A119932FBC00DCC498 /* MainViewController.m */; };
-		C0D3B5A419932FBC00DCC498 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A119932FBC00DCC498 /* MainViewController.m */; };
+		C0D3B5A91993380D00DCC498 /* LSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A71993380D00DCC498 /* LSMainViewController.m */; };
+		C0D3B5AA1993380D00DCC498 /* LSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A71993380D00DCC498 /* LSMainViewController.m */; };
+		C0D3B5AB1993380D00DCC498 /* LSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5A71993380D00DCC498 /* LSMainViewController.m */; };
+		C0D3B5AC1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
+		C0D3B5AD1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
+		C0D3B5AE1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
 		C0D8B55F1957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D8B5601957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D97E1519503EC100BC046E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */; };
@@ -875,8 +878,9 @@
 		C0D3B58919932EFA00DCC498 /* 雅致-首页导航条-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页导航条-bg.png"; sourceTree = "<group>"; };
 		C0D3B59B19932F9B00DCC498 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		C0D3B59C19932F9B00DCC498 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
-		C0D3B5A019932FBC00DCC498 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Langsi/MainViewController.h; sourceTree = "<group>"; };
-		C0D3B5A119932FBC00DCC498 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Langsi/MainViewController.m; sourceTree = "<group>"; };
+		C0D3B5A61993380D00DCC498 /* LSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSMainViewController.h; path = Langsi/LSMainViewController.h; sourceTree = "<group>"; };
+		C0D3B5A71993380D00DCC498 /* LSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSMainViewController.m; path = Langsi/LSMainViewController.m; sourceTree = "<group>"; };
+		C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSMainViewController.xib; path = Langsi/LSMainViewController.xib; sourceTree = "<group>"; };
 		C0D8B55E1957C77600497F65 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
 		C0D97E1319503EC100BC046E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -1564,8 +1568,9 @@
 		C0D3B5A519932FBF00DCC498 /* Langsi */ = {
 			isa = PBXGroup;
 			children = (
-				C0D3B5A019932FBC00DCC498 /* MainViewController.h */,
-				C0D3B5A119932FBC00DCC498 /* MainViewController.m */,
+				C0D3B5A61993380D00DCC498 /* LSMainViewController.h */,
+				C0D3B5A71993380D00DCC498 /* LSMainViewController.m */,
+				C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */,
 			);
 			name = Langsi;
 			sourceTree = "<group>";
@@ -1774,6 +1779,7 @@
 				C02BC0161988B727005EC171 /* CustomerCell.xib in Resources */,
 				C02BC0171988B727005EC171 /* PhotoCell.xib in Resources */,
 				C02BC0181988B727005EC171 /* ZHEditCustomerViewController.xib in Resources */,
+				C0D3B5AE1993380D00DCC498 /* LSMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1819,6 +1825,7 @@
 				C00DA9D91964F07600050B30 /* CustomerCell.xib in Resources */,
 				C0F9D2F6196BCC9600C1F0DB /* PhotoCell.xib in Resources */,
 				C0D3B58D19932EFA00DCC498 /* 雅致-扉页-bg03.png in Resources */,
+				C0D3B5AC1993380D00DCC498 /* LSMainViewController.xib in Resources */,
 				C05DFBD51989FAE300F8CAFE /* M2_DesignerViewController.xib in Resources */,
 				C0D2B534196401AD00E206AC /* ZHEditCustomerViewController.xib in Resources */,
 			);
@@ -1856,6 +1863,7 @@
 				C08324BF1952C21900297E63 /* InfoPlist.strings in Resources */,
 				C0F452E61965483100AE19D5 /* WKKViewController.xib in Resources */,
 				C05DFBD61989FAE300F8CAFE /* M2_DesignerViewController.xib in Resources */,
+				C0D3B5AD1993380D00DCC498 /* LSMainViewController.xib in Resources */,
 				C08324C01952C21900297E63 /* DesginerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1985,7 +1993,6 @@
 				C02BBF8B1988B727005EC171 /* M1_BaseViewController.m in Sources */,
 				C02BBF8C1988B727005EC171 /* MagicalRecord+ErrorHandling.m in Sources */,
 				C02BBF8D1988B727005EC171 /* MagicalImportFunctions.m in Sources */,
-				C0D3B5A419932FBC00DCC498 /* MainViewController.m in Sources */,
 				C02BBF8E1988B727005EC171 /* FadeView.m in Sources */,
 				C02BBF8F1988B727005EC171 /* TableView.m in Sources */,
 				C02BBF901988B727005EC171 /* CasesViewController.m in Sources */,
@@ -2012,6 +2019,7 @@
 				C02BBFA51988B727005EC171 /* NSString+MD5.m in Sources */,
 				C02BBFA61988B727005EC171 /* M1_CasesViewController.m in Sources */,
 				C02BBFA71988B727005EC171 /* PhotosViewController.m in Sources */,
+				C0D3B5AB1993380D00DCC498 /* LSMainViewController.m in Sources */,
 				C02BBFA81988B727005EC171 /* ZHCaseDetailViewController.m in Sources */,
 				C02BBFA91988B727005EC171 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				C02BBFAA1988B727005EC171 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -2131,7 +2139,6 @@
 				C0300B52195BFD1B00E3AC09 /* M1_BaseViewController.m in Sources */,
 				C0300AB6195BC3BC00E3AC09 /* MagicalRecord+ErrorHandling.m in Sources */,
 				C0300A8E195BC3BC00E3AC09 /* MagicalImportFunctions.m in Sources */,
-				C0D3B5A219932FBC00DCC498 /* MainViewController.m in Sources */,
 				C083246C19528C8D00297E63 /* FadeView.m in Sources */,
 				C04B0CE418C43F6600CFD548 /* TableView.m in Sources */,
 				C0781F231954156400762CAD /* CasesViewController.m in Sources */,
@@ -2158,6 +2165,7 @@
 				C04B0CC818C43F6600CFD548 /* NSString+MD5.m in Sources */,
 				C0A2E47D19512CE200210962 /* M1_CasesViewController.m in Sources */,
 				C030A939196D0173006A536C /* PhotosViewController.m in Sources */,
+				C0D3B5A91993380D00DCC498 /* LSMainViewController.m in Sources */,
 				C0781F1E1954153300762CAD /* ZHCaseDetailViewController.m in Sources */,
 				C0300ABE195BC3BC00E3AC09 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				C0300AB2195BC3BC00E3AC09 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -2357,6 +2365,7 @@
 				C0FF685719629F46004EA76F /* FAAnimationButtonScale.m in Sources */,
 				C08324951952C21900297E63 /* ZHPassDataJSON.m in Sources */,
 				C0EC0A42197F865400BB820B /* POVoiceHUD.m in Sources */,
+				C0D3B5AA1993380D00DCC498 /* LSMainViewController.m in Sources */,
 				C08324971952C21900297E63 /* ActivityIndicatorView.m in Sources */,
 				C08324991952C21900297E63 /* Button.m in Sources */,
 				C0F452EE1965494900AE19D5 /* Image.m in Sources */,
@@ -2384,7 +2393,6 @@
 				C0FF685B19629F46004EA76F /* NSObject+FastAnimation.m in Sources */,
 				C08324A61952C21900297E63 /* SGFocusImageFrame.m in Sources */,
 				C0300ABF195BC3BC00E3AC09 /* MagicalRecord+ShorthandSupport.m in Sources */,
-				C0D3B5A319932FBC00DCC498 /* MainViewController.m in Sources */,
 				C05823E1196E331300FDAF7E /* UIPlaceHolderTextView.m in Sources */,
 				C08324A71952C21900297E63 /* DesginerCellV.m in Sources */,
 				C05DFBD31989FAE300F8CAFE /* M2_DesignerViewController.m in Sources */,
