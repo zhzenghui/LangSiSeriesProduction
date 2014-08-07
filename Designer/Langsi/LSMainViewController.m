@@ -9,8 +9,9 @@
 #import "LSMainViewController.h"
 #import <CoreMotion/CoreMotion.h>
 #import "ZHAppDelegate.h"
+#import "TransitionView.h"
 
-#import "HUTransitionVerticalLinesAnimator.h"
+
 
 
 @interface LSMainViewController ()
@@ -26,11 +27,7 @@
     
 }
 
-- (void)mainAnimation
-{
-    HUTransitionVerticalLinesAnimator  *animator = [[HUTransitionVerticalLinesAnimator alloc] init];
-    [animator animateTransition:self.imgV1 toVC:self.imgV2 containerView:self.contentView];
-}
+
 
 #pragma mark - view
 
@@ -47,6 +44,35 @@
 {
     [super loadView ];
     
+
+    
+    
+    
+    TransitionView *transtionView   = [[TransitionView alloc] initWithFrame:self.view.frame ];
+    [self.view addSubview:transtionView];
+    
+
+    
+
+    NSMutableArray *a = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 5; i ++) {
+        
+        UIImageView *imgV = [[UIImageView alloc] initWithFrame:transtionView.frame];
+
+        NSString *s = [NSString stringWithFormat:@"雅致-首页-bg0%i",  i];
+        imgV.image = [UIImage imageNamed:s];
+        
+        [a addObject:imgV];
+    }
+
+
+    
+    
+    transtionView.viewsArray = a;
+    [transtionView startAnimation];
+
+    
     
     self.feiYeView.frame =  self.view.frame;
     [self.view addSubview:self.feiYeView];
@@ -55,16 +81,19 @@
     
 }
 
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    [self startUpdates];
     
-
-    [self startUpdates];
+ 
     
-
     
-    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(mainAnimation) userInfo:nil repeats:YES];
+    
+//    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(mainAnimation) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -121,7 +150,7 @@ static const NSTimeInterval deviceMotionMin = 0.1;
     } completion:^(BOOL finished) {
         if (finished) {
             
-            [self mainAnimation];
+//            [self mainAnimation];
         }
 
 

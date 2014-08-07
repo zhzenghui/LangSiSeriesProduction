@@ -87,6 +87,74 @@
     
 }
 
+
+
+- (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC containerView:(UIView *)containerView {
+//    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+//    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    
+    //get the container view
+//    UIView *containerView = [transitionContext containerView];
+    
+    //lets get a snapshot of the outgoing view
+    UIView *mainSnap = [fromVC snapshotViewAfterScreenUpdates:NO];
+    //cut it into vertical slices
+    NSArray *outgoingLineViews = [self cutView:mainSnap intoSlicesOfHeight:HLINEHEIGHT yOffset:fromVC.frame.origin.y];
+    
+    //add the slices to the content view.
+    for (UIView *v in outgoingLineViews) {
+        [containerView addSubview:v];
+    }
+    
+    
+    UIView *toView = toVC;
+//    toView.frame = [transitionContext finalFrameForViewController:toVC];
+//    [containerView addSubview:toView];
+    
+    
+    CGFloat toViewStartX = toView.frame.origin.x;
+    toView.alpha = 0;
+    fromVC.hidden = YES;
+    
+    BOOL presenting = self.presenting;
+    
+    [UIView animateWithDuration:HLANIMATION_TIME1 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        //This is basically a hack to get the incoming view to render before I snapshot it.
+    } completion:^(BOOL finished) {
+        
+        toVC.alpha = 1;
+        UIView *mainInSnap = [toView snapshotViewAfterScreenUpdates:YES];
+        //cut it into vertical slices
+        NSArray *incomingLineViews = [self cutView:mainInSnap intoSlicesOfHeight:HLINEHEIGHT yOffset:toView.frame.origin.y];
+        
+        //move the slices in to start position (incoming comes from the right)
+        [self repositionViewSlices:incomingLineViews moveLeft:!presenting];
+        
+        //add the slices to the content view.
+        for (UIView *v in incomingLineViews) {
+            [containerView addSubview:v];
+        }
+        toView.hidden = YES;
+        
+        [UIView animateWithDuration:HLANIMATION_TIME2 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            [self repositionViewSlices:outgoingLineViews moveLeft:presenting];
+            [self resetViewSlices:incomingLineViews toXOrigin:toViewStartX];
+        } completion:^(BOOL finished) {
+            fromVC.hidden = NO;
+            toView.hidden = NO;
+            [toView setNeedsUpdateConstraints];
+            for (UIView *v in incomingLineViews) {
+                [v removeFromSuperview];
+            }
+            for (UIView *v in outgoingLineViews) {
+                [v removeFromSuperview];
+            }
+//            [transitionContext completeTransition:YES];
+        }];
+        
+    }];
+}
+
 /**
  cuts a \a view into an array of smaller views of \a height
  @param view the view to be sliced up

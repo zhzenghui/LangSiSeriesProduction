@@ -559,6 +559,9 @@
 		C0D3B60919933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */; };
 		C0D3B60A19933F2500DCC498 /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */; };
 		C0D3B60C1993458E00DCC498 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D3B60B1993458E00DCC498 /* CoreMotion.framework */; };
+		C0D3B60F1993855400DCC498 /* TransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B60E1993855400DCC498 /* TransitionView.m */; };
+		C0D3B6101993855400DCC498 /* TransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B60E1993855400DCC498 /* TransitionView.m */; };
+		C0D3B6111993855400DCC498 /* TransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B60E1993855400DCC498 /* TransitionView.m */; };
 		C0D8B55F1957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D8B5601957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D97E1519503EC100BC046E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */; };
@@ -937,6 +940,8 @@
 		C0D3B5D619933F2500DCC498 /* 雅致-首页-坐标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雅致-首页-坐标.jpg"; sourceTree = "<group>"; };
 		C0D3B5D719933F2500DCC498 /* 雅致-首页导航条-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页导航条-bg@2x.png"; sourceTree = "<group>"; };
 		C0D3B60B1993458E00DCC498 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C0D3B60D1993855400DCC498 /* TransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionView.h; sourceTree = "<group>"; };
+		C0D3B60E1993855400DCC498 /* TransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionView.m; sourceTree = "<group>"; };
 		C0D8B55E1957C77600497F65 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
 		C0D97E1319503EC100BC046E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -1389,6 +1394,8 @@
 				C05823D7196E331300FDAF7E /* AlertView.m */,
 				C05823D8196E331300FDAF7E /* PopupView.h */,
 				C05823D9196E331300FDAF7E /* PopupView.m */,
+				C0D3B60D1993855400DCC498 /* TransitionView.h */,
+				C0D3B60E1993855400DCC498 /* TransitionView.m */,
 				C05823DA196E331300FDAF7E /* UIPlaceHolderTextView.h */,
 				C05823DB196E331300FDAF7E /* UIPlaceHolderTextView.m */,
 				C0F452EB1965494900AE19D5 /* Image.h */,
@@ -2156,6 +2163,7 @@
 				C02BBFBE1988B727005EC171 /* Customer.m in Sources */,
 				C02BBFBF1988B727005EC171 /* ZHCustomerViewController.m in Sources */,
 				C05DFBEA198A32CC00F8CAFE /* M2_CasesCell.m in Sources */,
+				C0D3B6111993855400DCC498 /* TransitionView.m in Sources */,
 				C02BBFC01988B727005EC171 /* PopupView.m in Sources */,
 				C02BBFC11988B727005EC171 /* IIWrapController.m in Sources */,
 				C02BBFC21988B727005EC171 /* User.m in Sources */,
@@ -2306,6 +2314,7 @@
 				C06CC4DE19610CD600D009AA /* Customer.m in Sources */,
 				C0300AD8195BCA6200E3AC09 /* ZHCustomerViewController.m in Sources */,
 				C05DFBE8198A32CC00F8CAFE /* M2_CasesCell.m in Sources */,
+				C0D3B60F1993855400DCC498 /* TransitionView.m in Sources */,
 				C05823DE196E331300FDAF7E /* PopupView.m in Sources */,
 				C04B0CE918C43F6600CFD548 /* IIWrapController.m in Sources */,
 				C06CC4CF1961099100D009AA /* User.m in Sources */,
@@ -2450,6 +2459,7 @@
 				C0D3B5BF19933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				C0300AA9195BC3BC00E3AC09 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				C083248C1952C21900297E63 /* ZHNetWorkFunction.m in Sources */,
+				C0D3B6101993855400DCC498 /* TransitionView.m in Sources */,
 				C0300AA5195BC3BC00E3AC09 /* NSManagedObject+MagicalRequests.m in Sources */,
 				C083248D1952C21900297E63 /* ZHDBControl.m in Sources */,
 				C083248E1952C21900297E63 /* UserSettingInfo.m in Sources */,
