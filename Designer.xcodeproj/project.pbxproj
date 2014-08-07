@@ -512,6 +512,18 @@
 		C0D3B5AC1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
 		C0D3B5AD1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
 		C0D3B5AE1993380D00DCC498 /* LSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */; };
+		C0D3B5B819933A3000DCC498 /* HUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B119933A3000DCC498 /* HUTransitionAnimator.m */; };
+		C0D3B5B919933A3000DCC498 /* HUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B119933A3000DCC498 /* HUTransitionAnimator.m */; };
+		C0D3B5BA19933A3000DCC498 /* HUTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B119933A3000DCC498 /* HUTransitionAnimator.m */; };
+		C0D3B5BB19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B319933A3000DCC498 /* HUTransitionGhostAnimator.m */; };
+		C0D3B5BC19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B319933A3000DCC498 /* HUTransitionGhostAnimator.m */; };
+		C0D3B5BD19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B319933A3000DCC498 /* HUTransitionGhostAnimator.m */; };
+		C0D3B5BE19933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */; };
+		C0D3B5BF19933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */; };
+		C0D3B5C019933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */; };
+		C0D3B5C119933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
+		C0D3B5C219933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
+		C0D3B5C319933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */; };
 		C0D8B55F1957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D8B5601957C77600497F65 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0D8B55D1957C77600497F65 /* NoteModel.xcdatamodeld */; };
 		C0D97E1519503EC100BC046E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */; };
@@ -881,6 +893,14 @@
 		C0D3B5A61993380D00DCC498 /* LSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSMainViewController.h; path = Langsi/LSMainViewController.h; sourceTree = "<group>"; };
 		C0D3B5A71993380D00DCC498 /* LSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSMainViewController.m; path = Langsi/LSMainViewController.m; sourceTree = "<group>"; };
 		C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSMainViewController.xib; path = Langsi/LSMainViewController.xib; sourceTree = "<group>"; };
+		C0D3B5B019933A3000DCC498 /* HUTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionAnimator.h; sourceTree = "<group>"; };
+		C0D3B5B119933A3000DCC498 /* HUTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionAnimator.m; sourceTree = "<group>"; };
+		C0D3B5B219933A3000DCC498 /* HUTransitionGhostAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionGhostAnimator.h; sourceTree = "<group>"; };
+		C0D3B5B319933A3000DCC498 /* HUTransitionGhostAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionGhostAnimator.m; sourceTree = "<group>"; };
+		C0D3B5B419933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionHorizontalLinesAnimator.h; sourceTree = "<group>"; };
+		C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionHorizontalLinesAnimator.m; sourceTree = "<group>"; };
+		C0D3B5B619933A3000DCC498 /* HUTransitionVerticalLinesAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUTransitionVerticalLinesAnimator.h; sourceTree = "<group>"; };
+		C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUTransitionVerticalLinesAnimator.m; sourceTree = "<group>"; };
 		C0D8B55E1957C77600497F65 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
 		C0D97E1319503EC100BC046E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		C0D97E1419503EC100BC046E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -1287,6 +1307,7 @@
 		C04B0C6518C43F6600CFD548 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				C0D3B5AF19933A3000DCC498 /* HUAnimator */,
 				C0300A52195BC3BC00E3AC09 /* MagicalRecord */,
 				C04B0C6618C43F6600CFD548 /* CCLog.h */,
 				C04B0C6718C43F6600CFD548 /* Common.h */,
@@ -1573,6 +1594,21 @@
 				C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */,
 			);
 			name = Langsi;
+			sourceTree = "<group>";
+		};
+		C0D3B5AF19933A3000DCC498 /* HUAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				C0D3B5B019933A3000DCC498 /* HUTransitionAnimator.h */,
+				C0D3B5B119933A3000DCC498 /* HUTransitionAnimator.m */,
+				C0D3B5B219933A3000DCC498 /* HUTransitionGhostAnimator.h */,
+				C0D3B5B319933A3000DCC498 /* HUTransitionGhostAnimator.m */,
+				C0D3B5B419933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.h */,
+				C0D3B5B519933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m */,
+				C0D3B5B619933A3000DCC498 /* HUTransitionVerticalLinesAnimator.h */,
+				C0D3B5B719933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m */,
+			);
+			path = HUAnimator;
 			sourceTree = "<group>";
 		};
 		C0FF683119629F46004EA76F /* FastAnimationWithPop */ = {
@@ -1968,6 +2004,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D3B5BD19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */,
 				C02BBF761988B727005EC171 /* BejoyViewController.m in Sources */,
 				C02BBF771988B727005EC171 /* AllBaseViewController.m in Sources */,
 				C02BBF781988B727005EC171 /* SGFocusImageItem.m in Sources */,
@@ -1980,6 +2017,7 @@
 				C02BBF7F1988B727005EC171 /* FAAnimationZoomIn.m in Sources */,
 				C02BBF801988B727005EC171 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				C02BBF811988B727005EC171 /* PhotoCell.m in Sources */,
+				C0D3B5BA19933A3000DCC498 /* HUTransitionAnimator.m in Sources */,
 				C02BBF821988B727005EC171 /* NSNumber+MagicalDataImport.m in Sources */,
 				C02BBF831988B727005EC171 /* ZHNoteViewController.m in Sources */,
 				C02BBF841988B727005EC171 /* ZHManageCell.m in Sources */,
@@ -2000,6 +2038,7 @@
 				C02BBF921988B727005EC171 /* ZHMainViewController.m in Sources */,
 				C02BBF931988B727005EC171 /* ZHViewController.m in Sources */,
 				C02BBF941988B727005EC171 /* TypeTableView.m in Sources */,
+				C0D3B5C019933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				C02BBF951988B727005EC171 /* ZHEditNoteViewController.m in Sources */,
 				C02BBF961988B727005EC171 /* CaseCell.m in Sources */,
 				C02BBF971988B727005EC171 /* ZHAppDelegate.m in Sources */,
@@ -2094,6 +2133,7 @@
 				C02BBFE91988B727005EC171 /* NetWork.m in Sources */,
 				C02BBFEA1988B727005EC171 /* M1_WebViewController.m in Sources */,
 				C02BBFEB1988B727005EC171 /* TableViewController.m in Sources */,
+				C0D3B5C319933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				C0D3B59F19932F9B00DCC498 /* LSViewController.m in Sources */,
 				C02BBFEC1988B727005EC171 /* SGFocusImageFrame.m in Sources */,
 				C02BBFED1988B727005EC171 /* DesginerCellV.m in Sources */,
@@ -2114,6 +2154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D3B5BB19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */,
 				C031ED6E18C5C27D004E970D /* BejoyViewController.m in Sources */,
 				C0C69DA819639F1900B7944C /* AllBaseViewController.m in Sources */,
 				C0BC18D118D97E2C007BD139 /* SGFocusImageItem.m in Sources */,
@@ -2126,6 +2167,7 @@
 				C0FF685219629F46004EA76F /* FAAnimationZoomIn.m in Sources */,
 				C0300AA6195BC3BC00E3AC09 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				C0F9D2F3196BCC6F00C1F0DB /* PhotoCell.m in Sources */,
+				C0D3B5B819933A3000DCC498 /* HUTransitionAnimator.m in Sources */,
 				C0300A94195BC3BC00E3AC09 /* NSNumber+MagicalDataImport.m in Sources */,
 				C0300AD1195BC58100E3AC09 /* ZHNoteViewController.m in Sources */,
 				C04B0CEA18C43F6600CFD548 /* ZHManageCell.m in Sources */,
@@ -2146,6 +2188,7 @@
 				C0FE61A319501607002972FB /* ZHMainViewController.m in Sources */,
 				C04B0C3A18C43EAA00CFD548 /* ZHViewController.m in Sources */,
 				C04B0CE618C43F6600CFD548 /* TypeTableView.m in Sources */,
+				C0D3B5BE19933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				C0C090951963B25900C8F085 /* ZHEditNoteViewController.m in Sources */,
 				C04B0CD718C43F6600CFD548 /* CaseCell.m in Sources */,
 				C04B0C3418C43EAA00CFD548 /* ZHAppDelegate.m in Sources */,
@@ -2240,6 +2283,7 @@
 				C04B0CC518C43F6600CFD548 /* NetWork.m in Sources */,
 				C0300B4A195BF7E500E3AC09 /* M1_WebViewController.m in Sources */,
 				C04B0CE518C43F6600CFD548 /* TableViewController.m in Sources */,
+				C0D3B5C119933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				C0D3B59D19932F9B00DCC498 /* LSViewController.m in Sources */,
 				C0BC18D218D97E2C007BD139 /* SGFocusImageFrame.m in Sources */,
 				C04B0CDB18C43F6600CFD548 /* DesginerCellV.m in Sources */,
@@ -2291,6 +2335,7 @@
 				C0300AA3195BC3BC00E3AC09 /* NSManagedObject+MagicalRecord.m in Sources */,
 				C08324761952C21900297E63 /* NewsCell.m in Sources */,
 				C08324771952C21900297E63 /* FadeView.m in Sources */,
+				C0D3B5C219933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */,
 				C08324781952C21900297E63 /* TableView.m in Sources */,
 				C08324791952C21900297E63 /* UIColor+Color.m in Sources */,
 				C0236FDB196FE02500FACFBD /* YISplashScreen.m in Sources */,
@@ -2331,6 +2376,7 @@
 				C08324891952C21900297E63 /* ZHFileCache.m in Sources */,
 				C083248A1952C21900297E63 /* Cookie.m in Sources */,
 				C083248B1952C21900297E63 /* ZHDBData.m in Sources */,
+				C0D3B5BF19933A3000DCC498 /* HUTransitionHorizontalLinesAnimator.m in Sources */,
 				C0300AA9195BC3BC00E3AC09 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				C083248C1952C21900297E63 /* ZHNetWorkFunction.m in Sources */,
 				C0300AA5195BC3BC00E3AC09 /* NSManagedObject+MagicalRequests.m in Sources */,
@@ -2347,6 +2393,7 @@
 				C08324921952C21900297E63 /* UIButton+Utilities.m in Sources */,
 				C06CC4D01961099100D009AA /* User.m in Sources */,
 				C0300AD2195BC58100E3AC09 /* ZHNoteViewController.m in Sources */,
+				C0D3B5BC19933A3000DCC498 /* HUTransitionGhostAnimator.m in Sources */,
 				C030A93A196D0173006A536C /* PhotosViewController.m in Sources */,
 				C08324931952C21900297E63 /* UIImage+ImageEffects.m in Sources */,
 				C06CC4DB19610CD600D009AA /* Photo.m in Sources */,
@@ -2374,6 +2421,7 @@
 				C083249C1952C21900297E63 /* IISideController.m in Sources */,
 				C083249D1952C21900297E63 /* M1_PaintViewController.m in Sources */,
 				C0300A8F195BC3BC00E3AC09 /* MagicalImportFunctions.m in Sources */,
+				C0D3B5B919933A3000DCC498 /* HUTransitionAnimator.m in Sources */,
 				C083249E1952C21900297E63 /* AccessCell.m in Sources */,
 				C083256E1952C83400297E63 /* M1_WebViewController.m in Sources */,
 				C083249F1952C21900297E63 /* ImageDownloader.m in Sources */,
