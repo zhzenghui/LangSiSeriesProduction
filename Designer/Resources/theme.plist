@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainCasesLable</key>
+	<string>greenColor</string>
+	<key>phoneLabel</key>
+	<string>blackColor</string>
+	<key>emailLabel</key>
+	<string>blackColor</string>
+	<key>cellLabel</key>
+	<string>blackColor</string>
+	<key>them_id</key>
+	<string>0</string>
+	<key>designer_imageCount</key>
+	<string>1</string>
+</dict>
+</plist>
