@@ -16,4 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIView *feiYeView;
 @property (weak, nonatomic) IBOutlet UIImageView *suoImageView;
 
+
+- (IBAction)enterMain:(id)sender;
+
 @end

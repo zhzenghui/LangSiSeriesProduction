@@ -18,7 +18,23 @@
 #import <iflyMSC/IFlySetting.h>
 
 
+@interface ZHAppDelegate()
+{
+    CMMotionManager *motionmanager;
+}
+
+@end
 @implementation ZHAppDelegate
+
+
+- (CMMotionManager *)sharedManager
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        motionmanager = [[CMMotionManager alloc] init];
+    });
+    return motionmanager;
+}
 
 
 - (void)createPhotoDir

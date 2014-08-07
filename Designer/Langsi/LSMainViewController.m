@@ -8,6 +8,7 @@
 
 #import "LSMainViewController.h"
 #import <CoreMotion/CoreMotion.h>
+#import "ZHAppDelegate.h"
 
 
 
@@ -42,7 +43,9 @@
 {
     [super viewDidLoad];
     
-    CMMotionManager *motionManager = [[CMMotionManager alloc]init];
+
+    [self startUpdates];
+    
 
     
     
@@ -54,4 +57,53 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - CMMotionManager
+static const NSTimeInterval deviceMotionMin = 0.1;
+
+- (void)startUpdates
+{
+//    NSTimeInterval delta = 0.005;
+    NSTimeInterval updateInterval = deviceMotionMin ;
+    
+    CMMotionManager *mManager = [(ZHAppDelegate *)[[UIApplication sharedApplication] delegate] sharedManager];
+    
+    
+    if ([mManager isDeviceMotionAvailable] == YES) {
+        [mManager setDeviceMotionUpdateInterval:updateInterval];
+        [mManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion *deviceMotion, NSError *error) {
+            
+            
+//            double gravityX = deviceMotion.gravity.x;
+//            double gravityY = deviceMotion.gravity.y;
+//            double gravityZ = deviceMotion.gravity.z;
+//            
+//            
+//            NSLog(@"%f", gravityZ);
+            
+            
+        }];
+    }
+}
+
+
+
+- (void)stopUpdates
+{
+    CMMotionManager *mManager = [(ZHAppDelegate *)[[UIApplication sharedApplication] delegate] sharedManager];
+    
+    if ([mManager isDeviceMotionActive] == YES) {
+        [mManager stopDeviceMotionUpdates];
+    }
+}
+
+
+
+- (IBAction)enterMain:(id)sender {
+    
+    [UIView animateWithDuration:KLongDuration animations:^{
+        
+        self.feiYeView.alpha = 0;
+    }];
+
+}
 @end

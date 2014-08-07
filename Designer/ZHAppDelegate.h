@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "User.h"
+#import <CoreMotion/CoreMotion.h>
 
 
 @interface ZHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) User *user;
+@property (strong, nonatomic, readonly) CMMotionManager *sharedManager;
 
 
 
