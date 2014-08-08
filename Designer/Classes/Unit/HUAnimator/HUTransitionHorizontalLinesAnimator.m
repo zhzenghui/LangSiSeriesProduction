@@ -19,7 +19,7 @@
 }
 
 
-#define HLINEHEIGHT 4.0
+#define HLINEHEIGHT 768/4
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];

@@ -5,48 +5,48 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>492975E2-FDD2-49D3-A2E3-9FE3E7EB4442</string>
+	<string>05E86116-2C19-4695-9F55-4B562F7184EE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Designer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0FDDC8A0-BBBC-4E1E-883C-CE929B5FE276</key>
-		<string>http://tomato.local/git/desgner.gi</string>
-		<key>CAF581C1-45DE-404B-A789-D575908B06AA</key>
-		<string>http://tomato.local/git/desgner.git</string>
+		<key>B1B0176B-5499-41D4-B431-6F5B8A53303B</key>
+		<string>https://tomato.local/git/desgner.git</string>
+		<key>C79AA56F-71D3-4075-A93F-1D38D66D7AFC</key>
+		<string>https://github.com/zhzenghui/LangSiSeriesProduction.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Designer.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0FDDC8A0-BBBC-4E1E-883C-CE929B5FE276</key>
+		<key>B1B0176B-5499-41D4-B431-6F5B8A53303B</key>
 		<string>../../../Documents/192.168.1.113/code/Designer</string>
-		<key>CAF581C1-45DE-404B-A789-D575908B06AA</key>
+		<key>C79AA56F-71D3-4075-A93F-1D38D66D7AFC</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://tomato.local/git/desgner.git</string>
+	<string>https://github.com/zhzenghui/LangSiSeriesProduction.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CAF581C1-45DE-404B-A789-D575908B06AA</string>
+	<string>C79AA56F-71D3-4075-A93F-1D38D66D7AFC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CAF581C1-45DE-404B-A789-D575908B06AA</string>
+			<string>B1B0176B-5499-41D4-B431-6F5B8A53303B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>desgner</string>
+			<string>Designer</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0FDDC8A0-BBBC-4E1E-883C-CE929B5FE276</string>
+			<string>C79AA56F-71D3-4075-A93F-1D38D66D7AFC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Designer</string>
+			<string>LangSiSeriesProduction</string>
 		</dict>
 	</array>
 </dict>
