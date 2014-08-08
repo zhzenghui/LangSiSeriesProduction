@@ -8,8 +8,6 @@
             <connections>
                 <outlet property="contentView" destination="i5M-Pr-FkT" id="03Y-f9-KYC"/>
                 <outlet property="feiYeView" destination="vQx-s3-zDN" id="8iP-Wm-37L"/>
-                <outlet property="imgV1" destination="eLo-FC-ZKP" id="moE-cC-bcO"/>
-                <outlet property="imgV2" destination="UZE-4h-tkO" id="iv8-rf-uqY"/>
                 <outlet property="suoImageView" destination="v88-WA-g7I" id="zxA-rY-LYK"/>
                 <outlet property="view" destination="mMC-JN-Xl7" id="Fev-dS-ijy"/>
             </connections>
@@ -57,17 +55,7 @@
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页-bg01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UZE-4h-tkO">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页-bg05.png" translatesAutoresizingMaskIntoConstraints="NO" id="eLo-FC-ZKP">
-                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </view>
@@ -86,8 +74,6 @@
         <image name="雅致-扉页-bg01.png" width="1024" height="768"/>
         <image name="雅致-扉页-bg02.png" width="1024" height="256"/>
         <image name="雅致-扉页-bg03.png" width="1024" height="256"/>
-        <image name="雅致-首页-bg01.png" width="1024" height="768"/>
-        <image name="雅致-首页-bg05.png" width="1024" height="768"/>
         <image name="雅致-首页导航条-bg.png" width="55" height="768"/>
     </resources>
 </document>

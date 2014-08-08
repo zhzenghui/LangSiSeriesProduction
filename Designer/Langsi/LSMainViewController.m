@@ -44,15 +44,8 @@
 {
     [super loadView ];
     
-
-    
-    
-    
     TransitionView *transtionView   = [[TransitionView alloc] initWithFrame:self.view.frame ];
-    [self.view addSubview:transtionView];
-    
-
-    
+    [self.contentView addSubview:transtionView];
 
     NSMutableArray *a = [[NSMutableArray alloc] init];
     
@@ -65,19 +58,12 @@
         
         [a addObject:imgV];
     }
-
-
-    
     
     transtionView.viewsArray = a;
     [transtionView startAnimation];
-
-    
     
     self.feiYeView.frame =  self.view.frame;
     [self.view addSubview:self.feiYeView];
-    
-    
     
 }
 
@@ -87,13 +73,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self startUpdates];
+    [self startUpdates];
     
  
     
     
     
-//    [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(mainAnimation) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,7 +88,8 @@
 
 #pragma mark - CMMotionManager
 static const NSTimeInterval deviceMotionMin = 0.1;
-
+#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
+//#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 - (void)startUpdates
 {
 //    NSTimeInterval delta = 0.005;
@@ -116,15 +102,22 @@ static const NSTimeInterval deviceMotionMin = 0.1;
         [mManager setDeviceMotionUpdateInterval:updateInterval];
         [mManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion *deviceMotion, NSError *error) {
             
+            double gravityX = deviceMotion.gravity.x;
+            double gravityY = deviceMotion.gravity.y;
+            double gravityZ = deviceMotion.gravity.z;
+//
+//            NSLog(@"x:%2f", gravityX);
+//            NSLog(@"y:%2f", gravityY);
+//            NSLog(@"z%2f", gravityZ);
             
-//            double gravityX = deviceMotion.gravity.x;
-//            double gravityY = deviceMotion.gravity.y;
-//            double gravityZ = deviceMotion.gravity.z;
-//            
-//            
-//            NSLog(@"%f", gravityZ);
             
-            
+//            角度
+            CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
+            CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
+            NSLog(@"%f", tiltForwardBackward);
+
+ 
+
         }];
     }
 }
