@@ -10,7 +10,7 @@
 #import "HUTransitionVerticalLinesAnimator.h"
 #import "HUTransitionHorizontalLinesAnimator.h"
 
-#define KNSTimeInterval 3
+#define KNSTimeInterval 4.01
 #define rand01 (0.9999999*float(rand())/RAND_MAX)
 
 
@@ -49,9 +49,7 @@
     }
     else {
         currentAnimationType = arc4random() % 2;
-    }
-    
-    
+    }    
 //    切换动画
     int f = currentIndex;
     if (currentIndex == self.viewsArray.count-1) {
@@ -64,21 +62,13 @@
     }
     
     currentIndex = t;
-
-
-    
-    DLog(@"%i", f);
-    DLog(@"%i", t);
+//    DLog(@"%i", f);
+//    DLog(@"%i", t);
 
     
     
     UIView *fView = self.viewsArray[f];
     UIView *tView = self.viewsArray[t];
-    
-    
-    DLog(@"%@", fView);
-    DLog(@"%@", tView);
-    
     
     if (currentAnimationType == AnimationTypeVertical) {
         DLog(@"Vertical" );
