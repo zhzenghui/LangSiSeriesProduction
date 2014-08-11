@@ -8,8 +8,8 @@
 
 
 static const CGFloat kAnimationDuration = 0.5f;
-static const CGFloat kAnimationDelay = 0.0f;
-static const CGFloat kMaxBlackMaskAlpha = 0.8f;
+//static const CGFloat kAnimationDelay = 0.0f;
+//static const CGFloat kMaxBlackMaskAlpha = 0.8f;
 
 
 

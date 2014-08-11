@@ -11,14 +11,69 @@
 #import "ZHAppDelegate.h"
 #import "TransitionView.h"
 
+#import "HUTransitionHorizontalLinesAnimator.h"
 
 
 
 @interface LSMainViewController ()
-
+{
+    NSMutableArray *viewsArray;
+    HUTransitionHorizontalLinesAnimator  *animator ;
+    int currentIndex ;
+    int f ;
+    int t ;
+    
+}
 @end
 
 @implementation LSMainViewController
+
+
+- (IBAction)transtionTouch:(id)sender
+{
+    UISwipeGestureRecognizer *sgr = (UISwipeGestureRecognizer *)sender;
+    
+    
+    if (sgr.direction == UISwipeGestureRecognizerDirectionLeft) {
+        if (currentIndex < viewsArray.count-1 ) {
+            f = currentIndex;
+            currentIndex ++;
+            t = currentIndex;
+        }
+        else {
+            f = currentIndex;
+            currentIndex = 0;
+            t = currentIndex ;
+            
+        }
+    }
+    else if (sgr.direction == UISwipeGestureRecognizerDirectionRight) {
+        
+        if (currentIndex == 0 ) {
+            f = currentIndex;
+            currentIndex = viewsArray.count-1;
+            t = currentIndex ;
+            
+        }
+        else {
+            f = currentIndex;
+            currentIndex --;
+            t = currentIndex;
+            
+        }
+   
+    }
+    
+    
+
+
+    DLog(@"current %i", currentIndex);
+    DLog(@"f:%i t:%i", f, t);
+    
+    [self animationPageForF:f t:t];
+    
+    
+}
 
 #pragma mark - action 
 
@@ -28,8 +83,40 @@
 }
 
 
+- (void)animationPageForF:(int)fIndex t:(int)tIndex
+{
+
+    
+    UIView *fView = viewsArray[fIndex];
+    UIView *tView = viewsArray[tIndex];
+//    DLog(@"f:%@ t:%@", fView, tView);
+
+    [animator animateTransition:fView toVC:tView containerView:self.contentView];
+    
+    
+}
 
 #pragma mark - view
+
+- (void)loadImagesView
+{
+    
+    animator = [[HUTransitionHorizontalLinesAnimator alloc] init];
+
+    viewsArray = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 5; i ++) {
+        
+        UIImageView *imgV = [[UIImageView alloc] initWithFrame:self.view.frame];
+        
+        NSString *s = [NSString stringWithFormat:@"雅致-产品%i-图片1",  i];
+        imgV.image = [UIImage imageNamed:s];
+        
+        [viewsArray addObject:imgV];
+    }
+    
+
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,24 +130,8 @@
 - (void)loadView
 {
     [super loadView ];
+    [self loadImagesView];
     
-    TransitionView *transtionView   = [[TransitionView alloc] initWithFrame:self.view.frame ];
-    [self.contentView addSubview:transtionView];
-
-    NSMutableArray *a = [[NSMutableArray alloc] init];
-    
-    for (int i = 0; i < 5; i ++) {
-        
-        UIImageView *imgV = [[UIImageView alloc] initWithFrame:transtionView.frame];
-
-        NSString *s = [NSString stringWithFormat:@"雅致-首页-bg0%i",  i];
-        imgV.image = [UIImage imageNamed:s];
-        
-        [a addObject:imgV];
-    }
-    
-    transtionView.viewsArray = a;
-    [transtionView startAnimation];
     
     self.feiYeView.frame =  self.view.frame;
     [self.view addSubview:self.feiYeView];
@@ -75,12 +146,15 @@
     [super viewDidLoad];
     [self startUpdates];
     
- 
-    
-    
-    
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    
+    [self animationPageForF:0 t:1];
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -110,13 +184,42 @@ static const NSTimeInterval deviceMotionMin = 0.1;
 //            NSLog(@"y:%2f", gravityY);
 //            NSLog(@"z%2f", gravityZ);
             
+//            {
+////            角度
+//                CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
+//                CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
+//
+//                NSLog(@"%f", tiltForwardBackward);
+//                
+//                int x = 0 ;
+//                
+//                if (tiltForwardBackward > 50) {
+//                    x = tiltForwardBackward - 50;
+//                }
+//                else  {
+//                    x = 50 - tiltForwardBackward;
+//                }
+//                
+//                self.suoImageView.frame = CGRectMake(x*2, 0, self.suoImageView.frame.size.width, self.suoImageView.frame.size.height);
+//            }
             
-//            角度
-            CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
-            CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
-            NSLog(@"%f", tiltForwardBackward);
-
- 
+            {
+                //            角度
+                CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
+                CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
+                CGFloat x = 0 ;
+                
+                if (tiltForwardBackward > 50) {
+                    x = tiltForwardBackward - 50;
+                }
+                else  {
+                    x = tiltForwardBackward - 50;
+                 }
+//                NSLog(@"%f", tiltForwardBackward);
+//
+//                NSLog(@"%f", x);
+                self.suoImageView.frame = CGRectMake(x*2, 0, self.suoImageView.frame.size.width, self.suoImageView.frame.size.height);
+            }
 
         }];
     }

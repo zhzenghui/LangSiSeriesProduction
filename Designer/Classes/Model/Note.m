@@ -17,5 +17,6 @@
 @dynamic note_id;
 @dynamic update_time;
 @dynamic sync;
+@dynamic photoNum;
 
 @end

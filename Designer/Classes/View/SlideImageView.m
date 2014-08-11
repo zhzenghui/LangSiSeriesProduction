@@ -91,6 +91,11 @@
 #pragma mark - 
 #pragma mark interface function
 
+- (void)scrollViewDidLongTapGesture:(id)sender
+{
+    
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

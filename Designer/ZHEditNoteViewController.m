@@ -569,7 +569,7 @@
     
     
     
-    UIButton *b  = [[Button share] addToView:vicesView addTarget:self rect:RectMake2x(800, 0, 400, 900) tag:1000 action:@selector(stopMSC:)];
+    [[Button share] addToView:vicesView addTarget:self rect:RectMake2x(800, 0, 400, 900) tag:1000 action:@selector(stopMSC:)];
 //    [b setTitle:@"说完了" forState:UIControlStateNormal];
 //    b.backgroundColor = [UIColor whiteColor];
     

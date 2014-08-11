@@ -187,9 +187,9 @@
 //    
 //    NSData *dataImage = [[NSData alloc] init];
 //    dataImage = UIImagePNGRepresentation(i);
-    NSData *data =  UIImageJPEGRepresentation(self.Preview.image, .8);
+//    NSData *data =  UIImageJPEGRepresentation(self.Preview.image, .8);
 
-    NSString * str = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+//    NSString * str = [data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
     
 //    

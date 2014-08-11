@@ -357,7 +357,7 @@
     float zDistanse = 1200.0;
     transform.m34 = 1.0 / -zDistanse;
     
-    CATransform3D transform1 = CATransform3DRotate(transform, -M_PI_2/10, 0, 1, 0);
+//    CATransform3D transform1 = CATransform3DRotate(transform, -M_PI_2/10, 0, 1, 0);
     CATransform3D transform2 = CATransform3DRotate(transform, -M_PI_2, 0, 1, 0);
     
     CAKeyframeAnimation* keyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];

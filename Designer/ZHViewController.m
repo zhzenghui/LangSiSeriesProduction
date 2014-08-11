@@ -134,9 +134,9 @@
 //
     
     NSString *url = [NSString stringWithFormat:@"http://192.168.1.103:3000/sessions"];
-
-    NSURL *URL = [NSURL URLWithString:@"http://example.com/foo.json"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+//
+//    NSURL *URL = [NSURL URLWithString:@"http://example.com/foo.json"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
 
     

@@ -10,7 +10,7 @@
 #import "Note.h"
 
 @class Customer;
-@interface ZHNoteViewController : NoteBaseViewController
+@interface ZHNoteViewController : NoteBaseViewController<UITableViewDataSource, UITableViewDelegate>
 {
     UITextField *nameTF;
     UITextField *phoneTF;

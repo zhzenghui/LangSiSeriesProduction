@@ -18,7 +18,7 @@
 
 @property(nonatomic, strong) NSDictionary *dict;
 @property(nonatomic, strong) UIImageView *imgView1;
-@property(nonatomic, strong) UILabel *ctnameLabel;
-@property(nonatomic, strong) UILabel *pbNameLabel;
+//@property(nonatomic, strong) UILabel *ctnameLabel;
+//@property(nonatomic, strong) UILabel *pbNameLabel;
 
 @end

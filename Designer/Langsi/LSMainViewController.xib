@@ -56,20 +56,83 @@
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="XPS-fR-kbo" appends="YES" id="TPB-ef-EAA"/>
+                        <outletCollection property="gestureRecognizers" destination="fw8-Gc-UiK" appends="YES" id="MAG-m4-CJD"/>
+                    </connections>
                 </view>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页导航条-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xrB-J8-wr0">
                     <rect key="frame" x="0.0" y="0.0" width="55" height="768"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEf-HG-mQe">
+                    <rect key="frame" x="0.0" y="76" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-产品.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq4-4X-8c2">
+                    <rect key="frame" x="0.0" y="141" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-价格.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pT-CQ-43M">
+                    <rect key="frame" x="0.0" y="206" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-五金.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H51-Vr-0ae">
+                    <rect key="frame" x="0.0" y="271" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-安全.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myX-ef-DEp">
+                    <rect key="frame" x="0.0" y="336" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-历史.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJb-L4-3xt">
+                    <rect key="frame" x="0.0" y="704" width="55" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="按钮-bejoy.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
+        <swipeGestureRecognizer direction="left" id="XPS-fR-kbo">
+            <connections>
+                <action selector="transtionTouch:" destination="-1" id="dD4-Tn-GXv"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="fw8-Gc-UiK">
+            <connections>
+                <action selector="transtionTouch:" destination="-1" id="gZu-ZK-wE9"/>
+            </connections>
+        </swipeGestureRecognizer>
     </objects>
     <resources>
+        <image name="按钮-bejoy.png" width="55" height="65"/>
+        <image name="按钮-五金.png" width="55" height="65"/>
+        <image name="按钮-产品.png" width="55" height="65"/>
+        <image name="按钮-价格.png" width="55" height="65"/>
+        <image name="按钮-历史.png" width="55" height="65"/>
+        <image name="按钮-安全.png" width="55" height="65"/>
         <image name="雅致-扉页-bg00.png" width="1024" height="768"/>
         <image name="雅致-扉页-bg01.png" width="1024" height="768"/>
         <image name="雅致-扉页-bg02.png" width="1024" height="256"/>

@@ -203,7 +203,7 @@
     int j = 0;
     
     int width = 110;
-    int hight = 65;
+//    int hight = 65;
     
 
     int svHight = 0;

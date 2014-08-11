@@ -94,7 +94,6 @@
     }
     
     
-    
     NSString *writableDBPath1 = [KCachesDirectory stringByAppendingPathComponent:db_name];
     
     NSString *dbPath = [NSString stringWithFormat:@"data/%@", db_name];
