@@ -16,5 +16,6 @@
 @property(nonatomic, strong) NSMutableDictionary *dataMDict;
 
 
+- (void)back:(UIButton *)button;
 
 @end

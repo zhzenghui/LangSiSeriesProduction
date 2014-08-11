@@ -467,6 +467,8 @@
 		C08325721952C8CB00297E63 /* M1_PdfPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08325711952C8CB00297E63 /* M1_PdfPopoverController.m */; };
 		C087CF6F19625282000555C6 /* NoteBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C087CF6E19625282000555C6 /* NoteBaseViewController.m */; };
 		C087CF7019625282000555C6 /* NoteBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C087CF6E19625282000555C6 /* NoteBaseViewController.m */; };
+		C08C33E81998AA4A00930F13 /* LSModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08C33E71998AA4A00930F13 /* LSModelViewController.xib */; };
+		C08C33EB1998BE8900930F13 /* TransitionVerticalAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */; };
 		C0A2E47D19512CE200210962 /* M1_CasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A2E47C19512CE200210962 /* M1_CasesViewController.m */; };
 		C0B47C4D18D859F9007C6D40 /* ZHNetWorkFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B47C4C18D859F9007C6D40 /* ZHNetWorkFunction.m */; };
 		C0B4DDAE19985BD300347B1A /* 雅致-产品1-图片1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B4DD6119985BD300347B1A /* 雅致-产品1-图片1@2x.png */; };
@@ -534,6 +536,7 @@
 		C0B4DDEC19985BD300347B1A /* 雅致-首页-bg05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B4DDAB19985BD300347B1A /* 雅致-首页-bg05@2x.png */; };
 		C0B4DDED19985BD300347B1A /* 雅致-首页-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0B4DDAC19985BD300347B1A /* 雅致-首页-坐标.jpg */; };
 		C0B4DDEE19985BD300347B1A /* 雅致-首页导航条-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0B4DDAD19985BD300347B1A /* 雅致-首页导航条-bg@2x.png */; };
+		C0B4DDF11998A5CC00347B1A /* LSModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B4DDF01998A5CC00347B1A /* LSModelViewController.m */; };
 		C0BC18D118D97E2C007BD139 /* SGFocusImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BC18CE18D97E2C007BD139 /* SGFocusImageItem.m */; };
 		C0BC18D218D97E2C007BD139 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BC18D018D97E2C007BD139 /* SGFocusImageFrame.m */; };
 		C0C090951963B25900C8F085 /* ZHEditNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C090931963B25900C8F085 /* ZHEditNoteViewController.m */; };
@@ -899,6 +902,9 @@
 		C08325711952C8CB00297E63 /* M1_PdfPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M1_PdfPopoverController.m; sourceTree = "<group>"; };
 		C087CF6D19625282000555C6 /* NoteBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteBaseViewController.h; path = Designer/Classes/NoteBaseViewController.h; sourceTree = SOURCE_ROOT; };
 		C087CF6E19625282000555C6 /* NoteBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteBaseViewController.m; path = Designer/Classes/NoteBaseViewController.m; sourceTree = SOURCE_ROOT; };
+		C08C33E71998AA4A00930F13 /* LSModelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSModelViewController.xib; sourceTree = "<group>"; };
+		C08C33E91998BE8900930F13 /* TransitionVerticalAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionVerticalAnimationView.h; sourceTree = "<group>"; };
+		C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionVerticalAnimationView.m; sourceTree = "<group>"; };
 		C0A2E47B19512CE200210962 /* M1_CasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M1_CasesViewController.h; sourceTree = "<group>"; };
 		C0A2E47C19512CE200210962 /* M1_CasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M1_CasesViewController.m; sourceTree = "<group>"; };
 		C0B47C4B18D859F9007C6D40 /* ZHNetWorkFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNetWorkFunction.h; sourceTree = "<group>"; };
@@ -968,6 +974,8 @@
 		C0B4DDAB19985BD300347B1A /* 雅致-首页-bg05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页-bg05@2x.png"; sourceTree = "<group>"; };
 		C0B4DDAC19985BD300347B1A /* 雅致-首页-坐标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雅致-首页-坐标.jpg"; sourceTree = "<group>"; };
 		C0B4DDAD19985BD300347B1A /* 雅致-首页导航条-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-首页导航条-bg@2x.png"; sourceTree = "<group>"; };
+		C0B4DDEF1998A5CC00347B1A /* LSModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSModelViewController.h; path = Langsi/LSModelViewController.h; sourceTree = "<group>"; };
+		C0B4DDF01998A5CC00347B1A /* LSModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSModelViewController.m; path = Langsi/LSModelViewController.m; sourceTree = "<group>"; };
 		C0BC18CD18D97E2C007BD139 /* SGFocusImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageItem.h; sourceTree = "<group>"; };
 		C0BC18CE18D97E2C007BD139 /* SGFocusImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageItem.m; sourceTree = "<group>"; };
 		C0BC18CF18D97E2C007BD139 /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageFrame.h; sourceTree = "<group>"; };
@@ -1458,6 +1466,8 @@
 				C05823D9196E331300FDAF7E /* PopupView.m */,
 				C0D3B60D1993855400DCC498 /* TransitionView.h */,
 				C0D3B60E1993855400DCC498 /* TransitionView.m */,
+				C08C33E91998BE8900930F13 /* TransitionVerticalAnimationView.h */,
+				C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */,
 				C05823DA196E331300FDAF7E /* UIPlaceHolderTextView.h */,
 				C05823DB196E331300FDAF7E /* UIPlaceHolderTextView.m */,
 				C0F452EB1965494900AE19D5 /* Image.h */,
@@ -1840,6 +1850,9 @@
 		C0D3B5A519932FBF00DCC498 /* Langsi */ = {
 			isa = PBXGroup;
 			children = (
+				C0B4DDEF1998A5CC00347B1A /* LSModelViewController.h */,
+				C0B4DDF01998A5CC00347B1A /* LSModelViewController.m */,
+				C08C33E71998AA4A00930F13 /* LSModelViewController.xib */,
 				C0D3B5A61993380D00DCC498 /* LSMainViewController.h */,
 				C0D3B5A71993380D00DCC498 /* LSMainViewController.m */,
 				C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */,
@@ -2123,6 +2136,7 @@
 				C0C090971963B25900C8F085 /* ZHEditNoteViewController.xib in Resources */,
 				C0B4DDB819985BD300347B1A /* 雅致-产品3-文字1@2x.png in Resources */,
 				C0B4DDBA19985BD300347B1A /* 雅致-产品5-图片1@2x.png in Resources */,
+				C08C33E81998AA4A00930F13 /* LSModelViewController.xib in Resources */,
 				C0B4DDC419985BD300347B1A /* 雅致-产品9-图片1@2x.png in Resources */,
 				C0B4DDB519985BD300347B1A /* 雅致-产品3-图片1@2x.png in Resources */,
 				C0FE61A419501607002972FB /* ZHMainViewController.xib in Resources */,
@@ -2506,6 +2520,7 @@
 				C04B0CC618C43F6600CFD548 /* NSDate+Helper.m in Sources */,
 				C02A1DD11956B87400FB4DD1 /* SlideImageView.m in Sources */,
 				C04B0CC818C43F6600CFD548 /* NSString+MD5.m in Sources */,
+				C08C33EB1998BE8900930F13 /* TransitionVerticalAnimationView.m in Sources */,
 				C0A2E47D19512CE200210962 /* M1_CasesViewController.m in Sources */,
 				C030A939196D0173006A536C /* PhotosViewController.m in Sources */,
 				C0D3B5A91993380D00DCC498 /* LSMainViewController.m in Sources */,
@@ -2539,6 +2554,7 @@
 				C05823DE196E331300FDAF7E /* PopupView.m in Sources */,
 				C04B0CE918C43F6600CFD548 /* IIWrapController.m in Sources */,
 				C06CC4CF1961099100D009AA /* User.m in Sources */,
+				C0B4DDF11998A5CC00347B1A /* LSModelViewController.m in Sources */,
 				C04B0C3018C43EAA00CFD548 /* main.m in Sources */,
 				C0F452ED1965494900AE19D5 /* Image.m in Sources */,
 				C0FF684C19629F46004EA76F /* FAAnimationBounces.m in Sources */,

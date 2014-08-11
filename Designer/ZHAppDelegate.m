@@ -107,19 +107,7 @@
 - (void)updateBundleId
 {
     
-    
 
-//    NSString *pathStr = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
-//    NSString *bundleid = [NSString stringWithFormat:@"com.i-bejoy.%@",  [UserSettingInfo share]];
-//    
-//    NSMutableDictionary *themeDict = [[NSMutableDictionary alloc] initWithContentsOfFile:pathStr];
-//    
-//    
-//    
-//    [themeDict setObject:bundleid forKey:@"CFBundleIdentifier"];
-//    
-//    [themeDict writeToFile:pathStr atomically:YES];
-    
     
 }
 

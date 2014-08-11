@@ -12,7 +12,11 @@
 #import "TransitionView.h"
 
 #import "HUTransitionHorizontalLinesAnimator.h"
+#import "TransitionVerticalAnimationView.h"
 
+
+
+#import "LSModelViewController.h"
 
 
 @interface LSMainViewController ()
@@ -22,6 +26,9 @@
     int currentIndex ;
     int f ;
     int t ;
+    
+    
+    TransitionVerticalAnimationView *tra;
     
 }
 @end
@@ -70,16 +77,91 @@
     DLog(@"current %i", currentIndex);
     DLog(@"f:%i t:%i", f, t);
     
-    [self animationPageForF:f t:t];
+//    [self animationPageForF:f t:t];
+    
+    [tra startAnimation:f t:t];
     
     
 }
 
 #pragma mark - action 
 
+int i = 0;
+
+- (IBAction)openViewController:(UIButton *)button
+{
+    
+    LSModelViewController *lsVC = nil;
+    switch (button.tag) {
+        case 1:
+        {
+            lsVC = [[LSModelViewController alloc] init];
+
+            break;
+        }
+        case 2:
+        {
+           
+            lsVC = [[LSModelViewController alloc] initWithNibName:@"LSModelViewController" bundle:nil];
+            
+            break;
+        }
+        case 3:
+        {
+            
+            lsVC = [[LSModelViewController alloc] init];
+
+            break;
+        }
+        case 4:
+        {
+            
+            lsVC = [[LSModelViewController alloc] init];
+
+            break;
+        }
+        case 5:
+        {
+            
+            lsVC = [[LSModelViewController alloc] init];
+
+            break;
+        }
+        case 6:
+        {
+            
+            lsVC = [[LSModelViewController alloc] init];
+
+            break;
+        }
+        default:
+            break;
+    }
+
+    
+    
+    lsVC.view.alpha = 0;
+    
+    [UIView animateWithDuration:KMiddleDuration animations:^{
+        lsVC.view.alpha = 1;
+    }];
+    
+    [self.view addSubview:lsVC.view];
+    [self addChildViewController:lsVC];
+}
+
 - (void)feYeAnimation
 {
     
+}
+
+- (void)page1Animation
+{
+    UIView *fView = viewsArray[0];
+    
+//    [[ImageView share] addToView:fView imagePathName:@"" rect:@""];
+    
+
 }
 
 
@@ -87,11 +169,6 @@
 {
 
     
-    UIView *fView = viewsArray[fIndex];
-    UIView *tView = viewsArray[tIndex];
-//    DLog(@"f:%@ t:%@", fView, tView);
-
-    [animator animateTransition:fView toVC:tView containerView:self.contentView];
     
     
 }
@@ -101,7 +178,6 @@
 - (void)loadImagesView
 {
     
-    animator = [[HUTransitionHorizontalLinesAnimator alloc] init];
 
     viewsArray = [[NSMutableArray alloc] init];
     
@@ -109,12 +185,13 @@
         
         UIImageView *imgV = [[UIImageView alloc] initWithFrame:self.view.frame];
         
-        NSString *s = [NSString stringWithFormat:@"雅致-产品%i-图片1",  i];
+        NSString *s = [NSString stringWithFormat:@"雅致-产品%i-图片1",  i+1];
         imgV.image = [UIImage imageNamed:s];
         
         [viewsArray addObject:imgV];
     }
     
+    tra.viewsArray = viewsArray;
 
 }
 
@@ -130,7 +207,14 @@
 - (void)loadView
 {
     [super loadView ];
+
     [self loadImagesView];
+
+    
+    
+    tra = [[TransitionVerticalAnimationView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+    [self.contentView addSubview:tra];
+
     
     
     self.feiYeView.frame =  self.view.frame;
@@ -152,7 +236,7 @@
 {
     [super viewDidAppear:YES];
     
-    [self animationPageForF:0 t:1];
+
 
 }
 - (void)didReceiveMemoryWarning
