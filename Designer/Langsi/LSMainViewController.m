@@ -14,7 +14,7 @@
 #import "HUTransitionHorizontalLinesAnimator.h"
 #import "TransitionVerticalAnimationView.h"
 
-
+#import "TransitionHorizontalAnimationView.h"
 
 #import "LSModelViewController.h"
 
@@ -28,7 +28,7 @@
     int t ;
     
     
-    TransitionVerticalAnimationView *tra;
+    TransitionHorizontalAnimationView *tra;
     
 }
 @end
@@ -211,7 +211,7 @@ int i = 0;
     
     
     
-    tra = [[TransitionVerticalAnimationView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+    tra = [[TransitionHorizontalAnimationView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
     [self.contentView addSubview:tra];
     tra.viewsArray = viewsArray;
 

@@ -319,6 +319,7 @@
 		C050DCD5195168A1000E0F03 /* M1_PaintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C050DCD3195168A1000E0F03 /* M1_PaintViewController.xib */; };
 		C050DCD81951756A000E0F03 /* M1_DesignerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C050DCD71951756A000E0F03 /* M1_DesignerViewController.m */; };
 		C056F58A18E27FC4005447CA /* data in Resources */ = {isa = PBXBuildFile; fileRef = C056F58918E27FC4005447CA /* data */; };
+		C057B2D81999DCF400322144 /* TransitionHorizontalAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C057B2D71999DCF400322144 /* TransitionHorizontalAnimationView.m */; };
 		C05823D1196E2B5D00FDAF7E /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05823D0196E2B5D00FDAF7E /* iflyMSC.framework */; };
 		C05823D2196E2B7300FDAF7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06889A3196D3F8C00B76E2E /* SystemConfiguration.framework */; };
 		C05823D3196E2B7C00FDAF7E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06889A1196D3F8000B76E2E /* AVFoundation.framework */; };
@@ -841,6 +842,8 @@
 		C050DCD61951756A000E0F03 /* M1_DesignerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M1_DesignerViewController.h; sourceTree = "<group>"; };
 		C050DCD71951756A000E0F03 /* M1_DesignerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M1_DesignerViewController.m; sourceTree = "<group>"; };
 		C056F58918E27FC4005447CA /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		C057B2D61999DCF400322144 /* TransitionHorizontalAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionHorizontalAnimationView.h; sourceTree = "<group>"; };
+		C057B2D71999DCF400322144 /* TransitionHorizontalAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionHorizontalAnimationView.m; sourceTree = "<group>"; };
 		C05823D0196E2B5D00FDAF7E /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = framework/iflyMSC.framework; sourceTree = "<group>"; };
 		C05823D6196E331300FDAF7E /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		C05823D7196E331300FDAF7E /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
@@ -1468,6 +1471,8 @@
 				C0D3B60E1993855400DCC498 /* TransitionView.m */,
 				C08C33E91998BE8900930F13 /* TransitionVerticalAnimationView.h */,
 				C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */,
+				C057B2D61999DCF400322144 /* TransitionHorizontalAnimationView.h */,
+				C057B2D71999DCF400322144 /* TransitionHorizontalAnimationView.m */,
 				C05823DA196E331300FDAF7E /* UIPlaceHolderTextView.h */,
 				C05823DB196E331300FDAF7E /* UIPlaceHolderTextView.m */,
 				C0F452EB1965494900AE19D5 /* Image.h */,
@@ -2598,6 +2603,7 @@
 				C083256D1952C83000297E63 /* PdfPopoverController.m in Sources */,
 				C04B0CC718C43F6600CFD548 /* NSDate-Utilities.m in Sources */,
 				C04B0CC518C43F6600CFD548 /* NetWork.m in Sources */,
+				C057B2D81999DCF400322144 /* TransitionHorizontalAnimationView.m in Sources */,
 				C0300B4A195BF7E500E3AC09 /* M1_WebViewController.m in Sources */,
 				C04B0CE518C43F6600CFD548 /* TableViewController.m in Sources */,
 				C0D3B5C119933A3000DCC498 /* HUTransitionVerticalLinesAnimator.m in Sources */,

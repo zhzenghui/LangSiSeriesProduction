@@ -1,18 +1,25 @@
 //
-//  HUTransitionHorizontalLinesAnimator.m
-//  EasyBeats
+//  TransitionAnimationView.m
+//  Designer
 //
-//  Created by Christian Inkster on 16/09/13.
+//  Created by bejoy on 14/8/11.
+//  Copyright (c) 2014年 zeng hui. All rights reserved.
 //
-//
+
+#import "TransitionHorizontalAnimationView.h"
 
 #import "HUTransitionHorizontalLinesAnimator.h"
 
 
-@implementation HUTransitionHorizontalLinesAnimator
+
+
+
+
+
+@implementation TransitionHorizontalAnimationView
 
 #define HLANIMATION_TIME1 0.01
-#define HLANIMATION_TIME2 1.70
+#define HLANIMATION_TIME2 4.70
 /// returns the duration of the verticalLinesAnimation
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
     return HLANIMATION_TIME1+HLANIMATION_TIME2;
@@ -20,81 +27,63 @@
 
 
 #define HLINEHEIGHT 768/4
-- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
-    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    
-    //get the container view
-    UIView *containerView = [transitionContext containerView];
-    
-    //lets get a snapshot of the outgoing view
-    UIView *mainSnap = [fromVC.view snapshotViewAfterScreenUpdates:NO];
-    //cut it into vertical slices
-    NSArray *outgoingLineViews = [self cutView:mainSnap intoSlicesOfHeight:HLINEHEIGHT yOffset:fromVC.view.frame.origin.y];
-    
-    //add the slices to the content view.
-    for (UIView *v in outgoingLineViews) {
-        [containerView addSubview:v];
+
+
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+
     }
-    
-    
-    UIView *toView = [toVC view];
-    toView.frame = [transitionContext finalFrameForViewController:toVC];
-    [containerView addSubview:toView];
-    
-    
-    CGFloat toViewStartX = toView.frame.origin.x;
-    toView.alpha = 0;
-    fromVC.view.hidden = YES;
-    
-    BOOL presenting = self.presenting;
-    
-    [UIView animateWithDuration:HLANIMATION_TIME1 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        //This is basically a hack to get the incoming view to render before I snapshot it.
-    } completion:^(BOOL finished) {
-        
-        toVC.view.alpha = 1;
-        UIView *mainInSnap = [toView snapshotViewAfterScreenUpdates:YES];
-        //cut it into vertical slices
-        NSArray *incomingLineViews = [self cutView:mainInSnap intoSlicesOfHeight:HLINEHEIGHT yOffset:toView.frame.origin.y];
-        
-        //move the slices in to start position (incoming comes from the right)
-        [self repositionViewSlices:incomingLineViews moveLeft:!presenting];
-        
-        //add the slices to the content view.
-        for (UIView *v in incomingLineViews) {
-            [containerView addSubview:v];
+    return self;
+}
+
+- (void)addSubViews
+{
+
+    int i = 0;
+    for (UIImageView *imgView in self.viewsArray) {
+
+        imgView.hidden = YES;
+        if (i == 0) {
+            imgView.hidden = NO;
         }
-        toView.hidden = YES;
         
-        [UIView animateWithDuration:HLANIMATION_TIME2 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [self repositionViewSlices:outgoingLineViews moveLeft:presenting];
-            [self resetViewSlices:incomingLineViews toXOrigin:toViewStartX];
-        } completion:^(BOOL finished) {
-            fromVC.view.hidden = NO;
-            toView.hidden = NO;
-            [toView setNeedsUpdateConstraints];
-            for (UIView *v in incomingLineViews) {
-                [v removeFromSuperview];
-            }
-            for (UIView *v in outgoingLineViews) {
-                [v removeFromSuperview];
-            }
-            [transitionContext completeTransition:YES];
-        }];
-        
-    }];
+        [self addSubview:imgView];
+        i ++;
+    }
     
 }
 
 
+- (void)startAnimation:(int)fIndex t:(int)tIndex
+{
+    
+    for (UIImageView *imgView in self.viewsArray) {
+        imgView.hidden = YES;
+    }
+    
+    UIView *fView = self.viewsArray[fIndex];
+    UIView *tView = self.viewsArray[tIndex];
 
-- (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC containerView:(UIView *)containerView {
-//    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-//    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    fView.hidden = NO;
+    tView.hidden = NO;
+    
+    [self animateTransition:fView toVC:tView];
+    
+    
+    
+    
+    
+
+    
+}
+
+- (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC {
     
     //get the container view
-//    UIView *containerView = [transitionContext containerView];
+    //    UIView *containerView = [transitionContext containerView];
     
     //lets get a snapshot of the outgoing view
     UIView *mainSnap = [fromVC snapshotViewAfterScreenUpdates:NO];
@@ -103,20 +92,20 @@
     
     //add the slices to the content view.
     for (UIView *v in outgoingLineViews) {
-        [containerView addSubview:v];
+        [self addSubview:v];
     }
     
     
     UIView *toView = toVC;
-//    toView.frame = [transitionContext finalFrameForViewController:toVC];
-//    [containerView addSubview:toView];
+    //    toView.frame = [transitionContext finalFrameForViewController:toVC];
+    //    [containerView addSubview:toView];
     
     
     CGFloat toViewStartX = toView.frame.origin.x;
     toView.alpha = 0;
     fromVC.hidden = YES;
     
-    BOOL presenting = self.presenting;
+    BOOL presenting = YES;//self.presenting;
     
     [UIView animateWithDuration:HLANIMATION_TIME1 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         //This is basically a hack to get the incoming view to render before I snapshot it.
@@ -132,7 +121,7 @@
         
         //add the slices to the content view.
         for (UIView *v in incomingLineViews) {
-            [containerView addSubview:v];
+            [self addSubview:v];
         }
         toView.hidden = YES;
         
@@ -149,11 +138,15 @@
             for (UIView *v in outgoingLineViews) {
                 [v removeFromSuperview];
             }
-//            [transitionContext completeTransition:YES];
+            //            [transitionContext completeTransition:YES];
         }];
         
     }];
+    
 }
+
+
+
 
 /**
  cuts a \a view into an array of smaller views of \a height
@@ -189,7 +182,7 @@
  */
 -(void)repositionViewSlices:(NSArray *)views moveLeft:(BOOL)left{
     
-
+    
     CGRect frame;
     float width;
     for (UIView *line in views) {
@@ -221,7 +214,6 @@
         
     }
 }
-
 
 
 @end

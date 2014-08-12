@@ -70,12 +70,7 @@
     
     [self animateTransition:fView toVC:tView];
     
-    
-    
-    
-    
-
-    
+ 
 }
 
 - (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC {
