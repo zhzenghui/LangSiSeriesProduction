@@ -53,6 +53,8 @@
             t = currentIndex ;
             
         }
+        
+        tra.isDirectionLeft = YES;
     }
     else if (sgr.direction == UISwipeGestureRecognizerDirectionRight) {
         
@@ -68,7 +70,7 @@
             t = currentIndex;
             
         }
-   
+           tra.isDirectionLeft = NO;
     }
     
     
@@ -180,7 +182,7 @@ int i = 0;
 
     viewsArray = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < 5; i ++) {
+    for (int i = 0; i < 10; i ++) {
         
         UIImageView *imgV = [[UIImageView alloc] initWithFrame:self.view.frame];
         
