@@ -8,6 +8,9 @@
 
 #import "LSViewController.h"
 
+
+
+
 @interface LSModelViewController : LSViewController
 {
     
@@ -15,6 +18,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UIScrollView *modlesScrollView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 
 
 

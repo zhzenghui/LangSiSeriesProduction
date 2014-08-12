@@ -77,7 +77,6 @@
     DLog(@"current %i", currentIndex);
     DLog(@"f:%i t:%i", f, t);
     
-//    [self animationPageForF:f t:t];
     
     [tra startAnimation:f t:t];
     
@@ -191,7 +190,6 @@ int i = 0;
         [viewsArray addObject:imgV];
     }
     
-    tra.viewsArray = viewsArray;
 
 }
 
@@ -208,14 +206,17 @@ int i = 0;
 {
     [super loadView ];
 
-    [self loadImagesView];
 
+        [self loadImagesView];
+    
     
     
     tra = [[TransitionVerticalAnimationView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
     [self.contentView addSubview:tra];
+    tra.viewsArray = viewsArray;
 
-    
+    [tra addSubViews];
+
     
     self.feiYeView.frame =  self.view.frame;
     [self.view addSubview:self.feiYeView];

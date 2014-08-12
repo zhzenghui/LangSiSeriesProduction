@@ -37,22 +37,46 @@
     return self;
 }
 
-
-- (void)startAnimation:(int)fIndex t:(int)tIndex
+- (void)addSubViews
 {
-    
-    UIView *fView = self.viewsArray[fIndex];
-    UIView *tView = self.viewsArray[tIndex];
-    
-    [self addSubview:fView];
-    [self addSubview:tView];
-    
-    [self animateTransition:fView toVC:tView];
+
+    int i = 0;
+    for (UIImageView *imgView in self.viewsArray) {
+
+        imgView.hidden = YES;
+        if (i == 0) {
+            imgView.hidden = NO;
+        }
+        
+        [self addSubview:imgView];
+        i ++;
+    }
     
 }
 
 
+- (void)startAnimation:(int)fIndex t:(int)tIndex
+{
+    
+    for (UIImageView *imgView in self.viewsArray) {
+        imgView.hidden = YES;
+    }
+    
+    UIView *fView = self.viewsArray[fIndex];
+    UIView *tView = self.viewsArray[tIndex];
 
+    fView.hidden = NO;
+    tView.hidden = NO;
+    
+    [self animateTransition:fView toVC:tView];
+    
+    
+    
+    
+    
+
+    
+}
 
 - (void)animateTransition:(UIView *)fromVC toVC:(UIView *)toVC {
     
@@ -90,7 +114,8 @@
             [self resetViewSlices:incomingLineViews toYOrigin:toViewStartY];
         } completion:^(BOOL finished) {
             if (finished) {
-                fromVC.hidden = NO;
+                fromVC.hidden = YES;
+                [self bringSubviewToFront:toVC];
                 toVC.hidden = NO;
                 [toVC setNeedsUpdateConstraints];
                 for (UIView *v in incomingLineViews) {

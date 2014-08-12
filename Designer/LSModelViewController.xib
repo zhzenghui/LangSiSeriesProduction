@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSModelViewController">
             <connections>
+                <outlet property="contentView" destination="GAE-OM-rfO" id="A8W-Mk-8ou"/>
                 <outlet property="modlesScrollView" destination="uFa-i3-alQ" id="6G4-r2-1Ae"/>
                 <outlet property="view" destination="6PP-Px-9fM" id="DCZ-d1-xIa"/>
             </connections>
@@ -22,6 +23,10 @@
                     <gestureRecognizers/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="taf-uO-wJc" appends="YES" id="yRE-b1-boU"/>
+                        <outletCollection property="gestureRecognizers" destination="QTJ-UF-0C5" appends="YES" id="BIt-bl-wg2"/>
+                    </connections>
                 </view>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="雅致-首页导航条-bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="zqb-oB-Np1">
                     <rect key="frame" x="0.0" y="0.0" width="55" height="768"/>
@@ -46,6 +51,16 @@
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
+        <swipeGestureRecognizer direction="up" id="taf-uO-wJc">
+            <connections>
+                <action selector="transtionTouch:" destination="-1" id="UJa-Rh-HFb"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="down" id="QTJ-UF-0C5">
+            <connections>
+                <action selector="transtionTouch:" destination="-1" id="i0L-Xp-A8Z"/>
+            </connections>
+        </swipeGestureRecognizer>
     </objects>
     <resources>
         <image name="雅致-产品-返回.png" width="55" height="55"/>
