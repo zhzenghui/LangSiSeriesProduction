@@ -140,9 +140,16 @@
     
     for (NSString *string in fileNamesArray) {
         i ++;
+        
+        
         NSString *path = [NSString stringWithFormat:@"按钮-%@", string];
-        [[Button share] addToView:self.modlesScrollView addTarget:self rect:RectMake2x(0, y*(i-1), 110, 130) tag:i action:@selector(openModle:) imagePath:path];
+        UIButton *b = [[Button share] addToView:self.modlesScrollView addTarget:self rect:RectMake2x(0, y*(i-1), 110, 130) tag:i action:@selector(openModle:) imagePath:path];
 
+        if (i == 1) {
+            b.backgroundColor = [UIColor blackColor];
+        }
+        
+        
         NSString *imgPath = [NSString stringWithFormat:@"雅致-%@", string];
         UIImageView *imgV = [[UIImageView alloc] initWithFrame:self.view.frame];
         imgV.image = [UIImage imageNamed:imgPath];
