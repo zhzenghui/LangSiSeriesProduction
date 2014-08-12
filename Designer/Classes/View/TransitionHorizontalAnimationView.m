@@ -64,6 +64,11 @@
         imgView.hidden = YES;
     }
     
+    
+    currentIndex = tIndex;
+    
+    
+    
     UIView *fView = self.viewsArray[fIndex];
     UIView *tView = self.viewsArray[tIndex];
 
@@ -144,6 +149,8 @@
                     [v removeFromSuperview];
                 }
                 //            [transitionContext completeTransition:YES];
+                
+                [self.delegate currentIndex:currentIndex];
                 
             }
         }];

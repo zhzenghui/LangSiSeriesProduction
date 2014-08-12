@@ -9,15 +9,19 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol TransitionHorizontalAnimationViewDelegate <NSObject>
+
+- (void)currentIndex:(int)index;
+
+@end
 
 @interface TransitionHorizontalAnimationView : UIView
-
-
-
-
-
+{
+    int currentIndex;
+}
 
 @property(nonatomic, strong) NSMutableArray *viewsArray;
+@property(nonatomic, assign) id<TransitionHorizontalAnimationViewDelegate> delegate;
 
 @property(nonatomic, assign) bool isDirectionLeft;
 
