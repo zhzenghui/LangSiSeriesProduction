@@ -19,7 +19,7 @@
 @implementation TransitionHorizontalAnimationView
 
 #define HLANIMATION_TIME1 0.01
-#define HLANIMATION_TIME2 4.70
+#define HLANIMATION_TIME2 1.70
 /// returns the duration of the verticalLinesAnimation
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
     return HLANIMATION_TIME1+HLANIMATION_TIME2;
@@ -126,19 +126,26 @@
         toView.hidden = YES;
         
         [UIView animateWithDuration:HLANIMATION_TIME2 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-            [self repositionViewSlices:outgoingLineViews moveLeft:presenting];
+
+            [self repositionViewSlices:outgoingLineViews moveLeft:YES];
             [self resetViewSlices:incomingLineViews toXOrigin:toViewStartX];
         } completion:^(BOOL finished) {
-            fromVC.hidden = NO;
-            toView.hidden = NO;
-            [toView setNeedsUpdateConstraints];
-            for (UIView *v in incomingLineViews) {
-                [v removeFromSuperview];
+            
+            if (finished) {
+
+                fromVC.hidden = YES;
+                [self bringSubviewToFront:toVC];
+                toView.hidden = NO;
+                [toView setNeedsUpdateConstraints];
+                for (UIView *v in incomingLineViews) {
+                    [v removeFromSuperview];
+                }
+                for (UIView *v in outgoingLineViews) {
+                    [v removeFromSuperview];
+                }
+                //            [transitionContext completeTransition:YES];
+                
             }
-            for (UIView *v in outgoingLineViews) {
-                [v removeFromSuperview];
-            }
-            //            [transitionContext completeTransition:YES];
         }];
         
     }];
@@ -189,7 +196,13 @@
         frame = line.frame;
         width = CGRectGetWidth(frame) * RANDOM_FLOAT(1.0, 8.0);
         
-        frame.origin.x += (left)?-width:width;
+        if (  self.isDirectionLeft  ) {
+            frame.origin.x += (left)?-width:width;
+        }
+        else {
+            frame.origin.x -= (left)?-width:width;
+        }
+
         
         //save the new position
         line.frame = frame;

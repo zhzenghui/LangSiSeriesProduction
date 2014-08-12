@@ -19,6 +19,8 @@
 
 @property(nonatomic, strong) NSMutableArray *viewsArray;
 
+@property(nonatomic, assign) bool isDirectionLeft;
+
 
 - (void)startAnimation:(int)fIndex t:(int)tIndex;
 - (void)addSubViews;
