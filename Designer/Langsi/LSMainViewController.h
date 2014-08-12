@@ -7,8 +7,11 @@
 //
 
 #import "LSViewController.h"
+#import "TransitionHorizontalAnimationView.h"
 
-@interface LSMainViewController : LSViewController
+
+
+@interface LSMainViewController : LSViewController<TransitionHorizontalAnimationViewDelegate>
 
 
 

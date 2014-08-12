@@ -14,7 +14,6 @@
 #import "HUTransitionHorizontalLinesAnimator.h"
 #import "TransitionVerticalAnimationView.h"
 
-#import "TransitionHorizontalAnimationView.h"
 
 #import "LSModelViewController.h"
 
@@ -158,11 +157,15 @@ int i = 0;
 
 - (void)page1Animation
 {
-    UIView *fView = viewsArray[0];
+    UIView *v = viewsArray[0];
     
-//    [[ImageView share] addToView:fView imagePathName:@"" rect:@""];
-    
-
+    [UIView animateWithDuration:KMiddleDuration animations:^{
+        
+        for (UIView *view in v.subviews) {
+            view.alpha = 1;
+        }
+        
+    }];
 }
 
 
@@ -174,12 +177,51 @@ int i = 0;
     
 }
 
+#pragma mark - TransitionHorizontalAnimationViewDelegate
+
+
+- (void)currentIndex:(int)index
+{
+    DLog(@"current : %i", index);
+    
+    
+//    switch (index) {
+//        case 0:
+//        {
+//            
+//            break;
+//        }
+//        case 1:
+//        {
+            UIImageView *i1 = (UIImageView *)[viewsArray[index] viewWithTag:1];
+            UIImageView *i2 = (UIImageView *)[viewsArray[index] viewWithTag:2];
+
+            i1.alpha = 1;
+            i2.alpha = 1;
+//            [UIView animateWithDuration:KMiddleDuration animations:^{
+//                i1.alpha = 1;
+//            } completion:^(BOOL finished) {
+//                if (finished) {
+//                    [UIView animateWithDuration:KMiddleDuration animations:^{
+//                        i2.alpha = 1;
+//                    }];
+//                }
+//            }];
+//            
+//            
+//            
+//            break;
+//        }
+//        default:
+//            break;
+//    }
+    
+}
 #pragma mark - view
 
 - (void)loadImagesView
 {
     
-
     viewsArray = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < 10; i ++) {
@@ -190,9 +232,51 @@ int i = 0;
         imgV.image = [UIImage imageNamed:s];
         
         [viewsArray addObject:imgV];
-    }
-    
 
+        switch (i) {
+            case 0:
+            {
+                UIImageView *imgView1 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品1-图片2" rect:imgV.frame];
+                UIImageView *imgView2 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品1-文字" rect:imgV.frame];
+                
+                imgView1.alpha = 0;
+                imgView2.alpha = 0;
+                break;
+            }
+            case 1:
+            {
+                UIImageView *imgView1 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品2-图片2" rect:RectMake2x(0, 1536-512, 2048, 512)];
+                UIImageView *imgView2 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品2-文字1" rect:RectMake2x(0, 1536-512, 2048, 512)];
+                
+                imgView1.tag = 1;
+                imgView2.tag = 2;
+                
+                imgView1.alpha = 0;
+                imgView2.alpha = 0;
+                break;
+            }
+            case 2:
+            {
+                UIImageView *imgView1 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品3-图片2" rect:imgV.frame];
+                UIImageView *imgView3 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品3-图片3" rect:RectMake2x(2048-684, 0, 684, 1536)];
+                UIImageView *imgView2 = [[ImageView share] addToView:imgV imagePathName:@"雅致-产品3-文字1" rect:RectMake2x(2048-684 , 0, 684, 1536)];
+                
+                imgView1.tag = 1;
+                imgView2.tag = 2;
+                imgView3.tag = 3;
+                
+                imgView1.alpha = 0;
+                imgView2.alpha = 0;
+                imgView3.alpha = 0;
+
+                break;
+            }
+                
+            default:
+                break;
+        }
+        
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -207,20 +291,17 @@ int i = 0;
 - (void)loadView
 {
     [super loadView ];
-
-
-        [self loadImagesView];
-    
+    [self loadImagesView];
     
     
     tra = [[TransitionHorizontalAnimationView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
     [self.contentView addSubview:tra];
     tra.viewsArray = viewsArray;
-
+    tra.delegate = self;
     [tra addSubViews];
 
     
-    self.feiYeView.frame =  self.view.frame;
+    self.feiYeView.frame = self.view.frame;
     [self.view addSubview:self.feiYeView];
     
 }
@@ -253,7 +334,6 @@ static const NSTimeInterval deviceMotionMin = 0.1;
 //#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 - (void)startUpdates
 {
-//    NSTimeInterval delta = 0.005;
     NSTimeInterval updateInterval = deviceMotionMin ;
     
     CMMotionManager *mManager = [(ZHAppDelegate *)[[UIApplication sharedApplication] delegate] sharedManager];
@@ -266,31 +346,8 @@ static const NSTimeInterval deviceMotionMin = 0.1;
             double gravityX = deviceMotion.gravity.x;
             double gravityY = deviceMotion.gravity.y;
             double gravityZ = deviceMotion.gravity.z;
-//
-//            NSLog(@"x:%2f", gravityX);
-//            NSLog(@"y:%2f", gravityY);
-//            NSLog(@"z%2f", gravityZ);
+
             
-//            {
-////            角度
-//                CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
-//                CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
-//
-//                NSLog(@"%f", tiltForwardBackward);
-//                
-//                int x = 0 ;
-//                
-//                if (tiltForwardBackward > 50) {
-//                    x = tiltForwardBackward - 50;
-//                }
-//                else  {
-//                    x = 50 - tiltForwardBackward;
-//                }
-//                
-//                self.suoImageView.frame = CGRectMake(x*2, 0, self.suoImageView.frame.size.width, self.suoImageView.frame.size.height);
-//            }
-            
-            {
                 //            角度
                 CGFloat r = sqrtf(gravityX*gravityX + gravityY*gravityY + gravityZ*gravityZ);
                 CGFloat tiltForwardBackward = acosf(gravityZ/r) * 180.0f / M_PI - 90.0f;
@@ -306,8 +363,7 @@ static const NSTimeInterval deviceMotionMin = 0.1;
 //
 //                NSLog(@"%f", x);
                 self.suoImageView.frame = CGRectMake(x*2, 0, self.suoImageView.frame.size.width, self.suoImageView.frame.size.height);
-            }
-
+ 
         }];
     }
 }
