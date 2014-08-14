@@ -16,7 +16,7 @@
 
 
 #import "LSModelViewController.h"
-
+#import "ZHWujinViewController.h"
 
 @interface LSMainViewController ()
 {
@@ -94,7 +94,7 @@ int i = 0;
 - (IBAction)openViewController:(UIButton *)button
 {
     
-    LSModelViewController *lsVC = nil;
+    LSViewController *lsVC = nil;
     switch (button.tag) {
         case 1:
         {
@@ -112,7 +112,7 @@ int i = 0;
         case 3:
         {
             
-            lsVC = [[LSModelViewController alloc] init];
+            lsVC = [[ZHWujinViewController alloc] initWithNibName:@"ZHWujinViewController" bundle:nil];
 
             break;
         }
