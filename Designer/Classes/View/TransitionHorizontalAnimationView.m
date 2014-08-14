@@ -68,6 +68,16 @@
     currentIndex = tIndex;
     
     
+
+    for (UIImageView *iv in self.viewsArray) {
+        
+        for (UIView *subView in iv.subviews) {
+            
+            subView.alpha = 0;
+        }
+    }
+
+  
     
     UIView *fView = self.viewsArray[fIndex];
     UIView *tView = self.viewsArray[tIndex];
