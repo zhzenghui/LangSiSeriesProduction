@@ -10,4 +10,5 @@
 
 @interface ZHWujinViewController : LSViewController
 
+- (IBAction)open360:(id)sender;
 @end

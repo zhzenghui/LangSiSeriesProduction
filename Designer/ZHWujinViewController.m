@@ -7,6 +7,9 @@
 //
 
 #import "ZHWujinViewController.h"
+#import "HeYeViewController.h"
+#import "BashouViewController.h"
+#import "GuDingMaViewController.h"
 
 @interface ZHWujinViewController ()
 
@@ -35,4 +38,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)open360:(UIButton *)sender {
+    
+    UIViewController *viewController = nil;
+    switch (sender.tag) {
+        case 1:
+             viewController = [[BashouViewController alloc] init];
+            break;
+        case 2:
+            viewController = [[GuDingMaViewController alloc] init];
+            break;
+        case 3:
+            viewController = [[HeYeViewController alloc] init];
+            break;
+            
+        default:
+            break;
+    }
+    viewController.view.frame = self.view.frame;
+    
+    [self.view addSubview:viewController.view];
+    [self addChildViewController:viewController];
+    
+}
 @end
