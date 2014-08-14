@@ -17,6 +17,7 @@
 
 #import "LSModelViewController.h"
 #import "ZHWujinViewController.h"
+#import "ZHSecurityViewController.h"
 
 @interface LSMainViewController ()
 {
@@ -98,8 +99,8 @@ int i = 0;
     switch (button.tag) {
         case 1:
         {
-            lsVC = [[LSModelViewController alloc] init];
-
+//            lsVC = [[LSModelViewController alloc] init];
+            return;
             break;
         }
         case 2:
@@ -119,7 +120,7 @@ int i = 0;
         case 4:
         {
             
-            lsVC = [[LSModelViewController alloc] init];
+            lsVC = [[ZHSecurityViewController alloc] initWithNibName:@"ZHSecurityViewController" bundle:nil];
 
             break;
         }

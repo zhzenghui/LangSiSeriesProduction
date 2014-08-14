@@ -9102,6 +9102,35 @@
 		C018F3D7199C7DEC003819AB /* J_99.png in Resources */ = {isa = PBXBuildFile; fileRef = C018D07B199C7DE9003819AB /* J_99.png */; };
 		C018F3D8199C7DEC003819AB /* J_99.png in Resources */ = {isa = PBXBuildFile; fileRef = C018D07B199C7DE9003819AB /* J_99.png */; };
 		C018F3D9199C7DEC003819AB /* J_99.png in Resources */ = {isa = PBXBuildFile; fileRef = C018D07B199C7DE9003819AB /* J_99.png */; };
+		C018F3DD199C8254003819AB /* ZHSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C018F3DB199C8253003819AB /* ZHSecurityViewController.m */; };
+		C018F3DE199C8254003819AB /* ZHSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C018F3DB199C8253003819AB /* ZHSecurityViewController.m */; };
+		C018F3DF199C8254003819AB /* ZHSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C018F3DB199C8253003819AB /* ZHSecurityViewController.m */; };
+		C018F3E0199C8254003819AB /* ZHSecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018F3DC199C8254003819AB /* ZHSecurityViewController.xib */; };
+		C018F3E1199C8254003819AB /* ZHSecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018F3DC199C8254003819AB /* ZHSecurityViewController.xib */; };
+		C018F3E2199C8254003819AB /* ZHSecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018F3DC199C8254003819AB /* ZHSecurityViewController.xib */; };
+		C018F3EB199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */; };
+		C018F3EC199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */; };
+		C018F3ED199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */; };
+		C018F3EE199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */; };
+		C018F3EF199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */; };
+		C018F3F0199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */; };
+		C018F3F1199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */; };
+		C018F3F2199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */; };
+		C018F3F3199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */; };
+		C018F3F4199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E7199C82C5003819AB /* 雅致-安全-文字2@2x.png */; };
+		C018F3F5199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E7199C82C5003819AB /* 雅致-安全-文字2@2x.png */; };
+		C018F3F6199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E7199C82C5003819AB /* 雅致-安全-文字2@2x.png */; };
+		C018F3F7199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png */; };
+		C018F3F8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png */; };
+		C018F3F9199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png */; };
+		C018F3FA199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E9199C82C5003819AB /* 雅致-安全-玻璃2@2x.png */; };
+		C018F3FB199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E9199C82C5003819AB /* 雅致-安全-玻璃2@2x.png */; };
+		C018F3FC199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3E9199C82C5003819AB /* 雅致-安全-玻璃2@2x.png */; };
+		C018F3FD199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3EA199C82C5003819AB /* 雅致-安全-视频1@2x.png */; };
+		C018F3FE199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3EA199C82C5003819AB /* 雅致-安全-视频1@2x.png */; };
+		C018F3FF199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018F3EA199C82C5003819AB /* 雅致-安全-视频1@2x.png */; };
+		C018F401199C8803003819AB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C018F400199C8803003819AB /* MediaPlayer.framework */; };
+		C018F403199C8841003819AB /* Lens-60s-Mand-1211.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C018F402199C8841003819AB /* Lens-60s-Mand-1211.mp4 */; };
 		C0236FDA196FE02500FACFBD /* YISplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C0236FD7196FE02500FACFBD /* YISplashScreen.m */; };
 		C0236FDB196FE02500FACFBD /* YISplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C0236FD7196FE02500FACFBD /* YISplashScreen.m */; };
 		C0236FDC196FE02500FACFBD /* YISplashScreenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0236FD9196FE02500FACFBD /* YISplashScreenAnimation.m */; };
@@ -12766,6 +12795,18 @@
 		C018D079199C7DE9003819AB /* J_97.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = J_97.png; sourceTree = "<group>"; };
 		C018D07A199C7DE9003819AB /* J_98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = J_98.png; sourceTree = "<group>"; };
 		C018D07B199C7DE9003819AB /* J_99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = J_99.png; sourceTree = "<group>"; };
+		C018F3DA199C8253003819AB /* ZHSecurityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSecurityViewController.h; sourceTree = "<group>"; };
+		C018F3DB199C8253003819AB /* ZHSecurityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSecurityViewController.m; sourceTree = "<group>"; };
+		C018F3DC199C8254003819AB /* ZHSecurityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHSecurityViewController.xib; sourceTree = "<group>"; };
+		C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-bg@2x.png"; sourceTree = "<group>"; };
+		C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雅致-安全-坐标.jpg"; sourceTree = "<group>"; };
+		C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-文字1@2x.png"; sourceTree = "<group>"; };
+		C018F3E7199C82C5003819AB /* 雅致-安全-文字2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-文字2@2x.png"; sourceTree = "<group>"; };
+		C018F3E8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-玻璃1@2x.png"; sourceTree = "<group>"; };
+		C018F3E9199C82C5003819AB /* 雅致-安全-玻璃2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-玻璃2@2x.png"; sourceTree = "<group>"; };
+		C018F3EA199C82C5003819AB /* 雅致-安全-视频1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雅致-安全-视频1@2x.png"; sourceTree = "<group>"; };
+		C018F400199C8803003819AB /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C018F402199C8841003819AB /* Lens-60s-Mand-1211.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lens-60s-Mand-1211.mp4"; path = "../../安全视频/Lens-60s-Mand-1211.mp4"; sourceTree = "<group>"; };
 		C0236FD6196FE02500FACFBD /* YISplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YISplashScreen.h; sourceTree = "<group>"; };
 		C0236FD7196FE02500FACFBD /* YISplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YISplashScreen.m; sourceTree = "<group>"; };
 		C0236FD8196FE02500FACFBD /* YISplashScreenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YISplashScreenAnimation.h; sourceTree = "<group>"; };
@@ -13214,6 +13255,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C018F401199C8803003819AB /* MediaPlayer.framework in Frameworks */,
 				C0D3B60C1993458E00DCC498 /* CoreMotion.framework in Frameworks */,
 				C07B1CFE198743A9008ACB0C /* Accelerate.framework in Frameworks */,
 				C06889AD196D432500B76E2E /* libz.1.2.5.dylib in Frameworks */,
@@ -16481,6 +16523,21 @@
 			path = "雅致把手5";
 			sourceTree = "<group>";
 		};
+		C018F3E3199C82C5003819AB /* 安全-视频 */ = {
+			isa = PBXGroup;
+			children = (
+				C018F402199C8841003819AB /* Lens-60s-Mand-1211.mp4 */,
+				C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */,
+				C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */,
+				C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */,
+				C018F3E7199C82C5003819AB /* 雅致-安全-文字2@2x.png */,
+				C018F3E8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png */,
+				C018F3E9199C82C5003819AB /* 雅致-安全-玻璃2@2x.png */,
+				C018F3EA199C82C5003819AB /* 雅致-安全-视频1@2x.png */,
+			);
+			path = "安全-视频";
+			sourceTree = "<group>";
+		};
 		C02BC02C1988B86B005EC171 /* M2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -16664,6 +16721,7 @@
 		C04B0C2218C43EAA00CFD548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C018F400199C8803003819AB /* MediaPlayer.framework */,
 				C0D3B60B1993458E00DCC498 /* CoreMotion.framework */,
 				C0EC09F8197F75D200BB820B /* Accelerate.framework */,
 				C0EC09F6197F75C600BB820B /* OpenGLES.framework */,
@@ -16993,6 +17051,7 @@
 		C0B4DD5E19985BD300347B1A /* 切图 */ = {
 			isa = PBXGroup;
 			children = (
+				C018F3E3199C82C5003819AB /* 安全-视频 */,
 				C018C49F199C7DD4003819AB /* 五金旋转png */,
 				C018C472199C756A003819AB /* 五金 */,
 				C0B4DD5F19985BD300347B1A /* 产品 */,
@@ -17187,6 +17246,9 @@
 				C0D3B5A61993380D00DCC498 /* LSMainViewController.h */,
 				C0D3B5A71993380D00DCC498 /* LSMainViewController.m */,
 				C0D3B5A81993380D00DCC498 /* LSMainViewController.xib */,
+				C018F3DA199C8253003819AB /* ZHSecurityViewController.h */,
+				C018F3DB199C8253003819AB /* ZHSecurityViewController.m */,
+				C018F3DC199C8254003819AB /* ZHSecurityViewController.xib */,
 			);
 			name = Langsi;
 			sourceTree = "<group>";
@@ -18034,6 +18096,7 @@
 				C018E6DA199C7DEB003819AB /* O_187.png in Resources */,
 				C018D6C0199C7DEA003819AB /* C_36.png in Resources */,
 				C018D3B1199C7DE9003819AB /* B_163.png in Resources */,
+				C018F3F0199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */,
 				C018D7CB199C7DEA003819AB /* D_116.png in Resources */,
 				C018EE15199C7DEB003819AB /* H_199.png in Resources */,
 				C018D456199C7DE9003819AB /* B_31.png in Resources */,
@@ -18066,6 +18129,7 @@
 				C018E863199C7DEB003819AB /* F_122.png in Resources */,
 				C018EB39199C7DEB003819AB /* G_16.png in Resources */,
 				C018E29C199C7DEA003819AB /* M_41.png in Resources */,
+				C018F3F3199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */,
 				C018E965199C7DEB003819AB /* F_20.png in Resources */,
 				C018D5D6199C7DEA003819AB /* C_147.png in Resources */,
 				C018F1F0199C7DEC003819AB /* J_132.png in Resources */,
@@ -18336,8 +18400,10 @@
 				C018EAA0199C7DEB003819AB /* G_113.png in Resources */,
 				C018EF44199C7DEB003819AB /* I_108.png in Resources */,
 				C018E3E6199C7DEB003819AB /* N_140.png in Resources */,
+				C018F3E2199C8254003819AB /* ZHSecurityViewController.xib in Resources */,
 				C018F1DE199C7DEB003819AB /* J_127.png in Resources */,
 				C018DD71199C7DEA003819AB /* K_188.png in Resources */,
+				C018F3FF199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */,
 				C018E48B199C7DEB003819AB /* N_190.png in Resources */,
 				C018EE4E199C7DEB003819AB /* H_34.png in Resources */,
 				C018F38E199C7DEC003819AB /* J_76.png in Resources */,
@@ -19102,6 +19168,7 @@
 				C018DE7F199C7DEA003819AB /* K_88.png in Resources */,
 				C018D61B199C7DEA003819AB /* C_168.png in Resources */,
 				C018F23E199C7DEC003819AB /* J_156.png in Resources */,
+				C018F3F6199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */,
 				C018D4CB199C7DE9003819AB /* B_67.png in Resources */,
 				C018EF35199C7DEB003819AB /* I_103.png in Resources */,
 				C018E797199C7DEB003819AB /* O_62.png in Resources */,
@@ -19161,6 +19228,7 @@
 				C018ECE3199C7DEB003819AB /* H_106.png in Resources */,
 				C018DA5C199C7DEA003819AB /* E_132.png in Resources */,
 				C018DAB9199C7DEA003819AB /* E_160.png in Resources */,
+				C018F3FC199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */,
 				C018D6E1199C7DEA003819AB /* C_46.png in Resources */,
 				C018D0F3199C7DE9003819AB /* A_133.png in Resources */,
 				C018EAB8199C7DEB003819AB /* G_120.png in Resources */,
@@ -19714,6 +19782,7 @@
 				C018DDAD199C7DEA003819AB /* K_24.png in Resources */,
 				C018E128199C7DEA003819AB /* M_110.png in Resources */,
 				C018EA70199C7DEB003819AB /* G_1.png in Resources */,
+				C018F3ED199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */,
 				C018E32F199C7DEA003819AB /* M_86.png in Resources */,
 				C018D6F3199C7DEA003819AB /* C_51.png in Resources */,
 				C018F08E199C7DEB003819AB /* I_26.png in Resources */,
@@ -20274,6 +20343,7 @@
 				C018EAD6199C7DEB003819AB /* G_13.png in Resources */,
 				C018EE1B199C7DEB003819AB /* H_20.png in Resources */,
 				C018EBBA199C7DEB003819AB /* G_199.png in Resources */,
+				C018F3F9199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */,
 				C018F13C199C7DEB003819AB /* I_79.png in Resources */,
 				C018D573199C7DEA003819AB /* C_117.png in Resources */,
 				C018E248199C7DEA003819AB /* M_198.png in Resources */,
@@ -20449,6 +20519,7 @@
 				C0B4DDB019985BD300347B1A /* 雅致-产品1-文字1@2x.png in Resources */,
 				C018DE56199C7DEA003819AB /* K_76.png in Resources */,
 				C018E942199C7DEB003819AB /* F_190.png in Resources */,
+				C018F3FD199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */,
 				C018E8AC199C7DEB003819AB /* F_145.png in Resources */,
 				C018D700199C7DEA003819AB /* C_56.png in Resources */,
 				C018E6FF199C7DEB003819AB /* O_199.png in Resources */,
@@ -20479,6 +20550,7 @@
 				C018D14B199C7DE9003819AB /* A_160.png in Resources */,
 				C018DB1A199C7DEA003819AB /* E_190.png in Resources */,
 				C018DC19199C7DEA003819AB /* E_86.png in Resources */,
+				C018F3E0199C8254003819AB /* ZHSecurityViewController.xib in Resources */,
 				C018EFA5199C7DEB003819AB /* I_138.png in Resources */,
 				C018DEF2199C7DEA003819AB /* L_122.png in Resources */,
 				C018EB37199C7DEB003819AB /* G_16.png in Resources */,
@@ -21195,6 +21267,7 @@
 				C018D610199C7DEA003819AB /* C_165.png in Resources */,
 				C018EDF2199C7DEB003819AB /* H_189.png in Resources */,
 				C018D4B4199C7DE9003819AB /* B_60.png in Resources */,
+				C018F3F1199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */,
 				C018D676199C7DEA003819AB /* C_196.png in Resources */,
 				C018D433199C7DE9003819AB /* B_21.png in Resources */,
 				C018DFBE199C7DEA003819AB /* L_184.png in Resources */,
@@ -21236,6 +21309,7 @@
 				C018E2C1199C7DEA003819AB /* M_53.png in Resources */,
 				C0B4DDD719985BD300347B1A /* 雅致-型号-E31@2x.png in Resources */,
 				C018F0EC199C7DEB003819AB /* I_55.png in Resources */,
+				C018F3EE199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */,
 				C018EC8D199C7DEB003819AB /* G_81.png in Resources */,
 				C018E114199C7DEA003819AB /* M_105.png in Resources */,
 				C018D583199C7DEA003819AB /* C_122.png in Resources */,
@@ -21454,6 +21528,7 @@
 				C018EDDD199C7DEB003819AB /* H_182.png in Resources */,
 				C018DE8C199C7DEA003819AB /* K_92.png in Resources */,
 				C018E4B9199C7DEB003819AB /* N_23.png in Resources */,
+				C018F3EB199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */,
 				C018E492199C7DEB003819AB /* N_193.png in Resources */,
 				C018E120199C7DEA003819AB /* M_109.png in Resources */,
 				C018E2F7199C7DEA003819AB /* M_7.png in Resources */,
@@ -21649,6 +21724,7 @@
 				C018D19C199C7DE9003819AB /* A_185.png in Resources */,
 				C018D7ED199C7DEA003819AB /* D_127.png in Resources */,
 				C018E369199C7DEA003819AB /* N_103.png in Resources */,
+				C018F403199C8841003819AB /* Lens-60s-Mand-1211.mp4 in Resources */,
 				C018EE01199C7DEB003819AB /* H_193.png in Resources */,
 				C018E360199C7DEA003819AB /* N_100.png in Resources */,
 				C018D2A7199C7DE9003819AB /* A_84.png in Resources */,
@@ -22162,6 +22238,7 @@
 				C018DFA9199C7DEA003819AB /* L_178.png in Resources */,
 				C018E29A199C7DEA003819AB /* M_41.png in Resources */,
 				C018F1AC199C7DEB003819AB /* J_112.png in Resources */,
+				C018F3F7199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */,
 				C018F3A1199C7DEC003819AB /* J_82.png in Resources */,
 				C018D9CA199C7DEA003819AB /* D_9.png in Resources */,
 				C018DD0C199C7DEA003819AB /* K_158.png in Resources */,
@@ -22882,6 +22959,7 @@
 				C018D151199C7DE9003819AB /* A_162.png in Resources */,
 				C018D80B199C7DEA003819AB /* D_136.png in Resources */,
 				C018EB13199C7DEB003819AB /* G_149.png in Resources */,
+				C018F3F4199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */,
 				C018EC30199C7DEB003819AB /* G_53.png in Resources */,
 				C018EF2D199C7DEB003819AB /* I_101.png in Resources */,
 				C018EB2B199C7DEB003819AB /* G_156.png in Resources */,
@@ -23268,6 +23346,7 @@
 				C0B4DDC619985BD300347B1A /* 雅致-产品-辅助信息@2x.png in Resources */,
 				C018EDB6199C7DEB003819AB /* H_170.png in Resources */,
 				C018ED6B199C7DEB003819AB /* H_148.png in Resources */,
+				C018F3FA199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */,
 				C018EED6199C7DEB003819AB /* H_76.png in Resources */,
 				C018E0FF199C7DEA003819AB /* M_1.png in Resources */,
 				C018E657199C7DEB003819AB /* O_148.png in Resources */,
@@ -23824,6 +23903,7 @@
 				C018E64C199C7DEB003819AB /* O_144.png in Resources */,
 				C018E448199C7DEB003819AB /* N_170.png in Resources */,
 				C018EDDE199C7DEB003819AB /* H_182.png in Resources */,
+				C018F3FE199C82C5003819AB /* 雅致-安全-视频1@2x.png in Resources */,
 				C018D089199C7DE9003819AB /* A_101.png in Resources */,
 				C018E7F9199C7DEB003819AB /* O_92.png in Resources */,
 				C018D4DF199C7DE9003819AB /* B_73.png in Resources */,
@@ -24122,6 +24202,7 @@
 				C018DE30199C7DEA003819AB /* K_64.png in Resources */,
 				C018D9F5199C7DEA003819AB /* E_101.png in Resources */,
 				C018EC73199C7DEB003819AB /* G_73.png in Resources */,
+				C018F3F5199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */,
 				C018F2B5199C7DEC003819AB /* J_192.png in Resources */,
 				C018E1D8199C7DEA003819AB /* M_164.png in Resources */,
 				C018F264199C7DEC003819AB /* J_168.png in Resources */,
@@ -24511,6 +24592,7 @@
 				C018F246199C7DEC003819AB /* J_159.png in Resources */,
 				C018D98F199C7DEA003819AB /* D_71.png in Resources */,
 				C018E0E5199C7DEA003819AB /* L_91.png in Resources */,
+				C018F3F2199C82C5003819AB /* 雅致-安全-文字1@2x.png in Resources */,
 				C018E9F1199C7DEB003819AB /* F_61.png in Resources */,
 				C018D623199C7DEA003819AB /* C_170.png in Resources */,
 				C018DF26199C7DEA003819AB /* L_138.png in Resources */,
@@ -24890,6 +24972,7 @@
 				C018E9D0199C7DEB003819AB /* F_51.png in Resources */,
 				C018E724199C7DEB003819AB /* O_28.png in Resources */,
 				C018EE41199C7DEB003819AB /* H_30.png in Resources */,
+				C018F3FB199C82C5003819AB /* 雅致-安全-玻璃2@2x.png in Resources */,
 				C018E568199C7DEB003819AB /* N_76.png in Resources */,
 				C018D422199C7DE9003819AB /* B_198.png in Resources */,
 				C018E559199C7DEB003819AB /* N_71.png in Resources */,
@@ -25240,6 +25323,7 @@
 				C018EBD7199C7DEB003819AB /* G_26.png in Resources */,
 				C018EF79199C7DEB003819AB /* I_124.png in Resources */,
 				C018E229199C7DEA003819AB /* M_189.png in Resources */,
+				C018F3EC199C82C5003819AB /* 雅致-安全-bg@2x.png in Resources */,
 				C018F3A8199C7DEC003819AB /* J_84.png in Resources */,
 				C018D2E4199C7DE9003819AB /* B_101.png in Resources */,
 				C018E3B2199C7DEB003819AB /* N_125.png in Resources */,
@@ -25674,6 +25758,7 @@
 				C018F01E199C7DEB003819AB /* I_174.png in Resources */,
 				C018F05D199C7DEB003819AB /* I_193.png in Resources */,
 				C018DB45199C7DEA003819AB /* E_21.png in Resources */,
+				C018F3F8199C82C5003819AB /* 雅致-安全-玻璃1@2x.png in Resources */,
 				C018DA28199C7DEA003819AB /* E_117.png in Resources */,
 				C018E85C199C7DEB003819AB /* F_120.png in Resources */,
 				C018EB77199C7DEB003819AB /* G_179.png in Resources */,
@@ -26121,6 +26206,7 @@
 				C018EB35199C7DEB003819AB /* G_159.png in Resources */,
 				C018F21C199C7DEC003819AB /* J_146.png in Resources */,
 				C018D206199C7DE9003819AB /* A_35.png in Resources */,
+				C018F3EF199C82C5003819AB /* 雅致-安全-坐标.jpg in Resources */,
 				C018E76C199C7DEB003819AB /* O_5.png in Resources */,
 				C018E6BE199C7DEB003819AB /* O_179.png in Resources */,
 				C018E3EE199C7DEB003819AB /* N_143.png in Resources */,
@@ -26616,6 +26702,7 @@
 				C018E8EC199C7DEB003819AB /* F_164.png in Resources */,
 				C018E25C199C7DEA003819AB /* M_22.png in Resources */,
 				C018D0C8199C7DE9003819AB /* A_120.png in Resources */,
+				C018F3E1199C8254003819AB /* ZHSecurityViewController.xib in Resources */,
 				C018E5F5199C7DEB003819AB /* O_118.png in Resources */,
 				C018F192199C7DEB003819AB /* J_104.png in Resources */,
 				C018D5E1199C7DEA003819AB /* C_150.png in Resources */,
@@ -26737,6 +26824,7 @@
 				C02BBF7D1988B727005EC171 /* Theme.m in Sources */,
 				C02BBF7E1988B727005EC171 /* NSObject+MagicalDataImport.m in Sources */,
 				C02BBF7F1988B727005EC171 /* FAAnimationZoomIn.m in Sources */,
+				C018F3DF199C8254003819AB /* ZHSecurityViewController.m in Sources */,
 				C02BBF801988B727005EC171 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				C02BBF811988B727005EC171 /* PhotoCell.m in Sources */,
 				C0D3B5BA19933A3000DCC498 /* HUTransitionAnimator.m in Sources */,
@@ -26967,6 +27055,7 @@
 				C0D3B60F1993855400DCC498 /* TransitionView.m in Sources */,
 				C05823DE196E331300FDAF7E /* PopupView.m in Sources */,
 				C04B0CE918C43F6600CFD548 /* IIWrapController.m in Sources */,
+				C018F3DD199C8254003819AB /* ZHSecurityViewController.m in Sources */,
 				C06CC4CF1961099100D009AA /* User.m in Sources */,
 				C0B4DDF11998A5CC00347B1A /* LSModelViewController.m in Sources */,
 				C04B0C3018C43EAA00CFD548 /* main.m in Sources */,
@@ -27092,6 +27181,7 @@
 				C08324801952C21900297E63 /* FlipBoardNavigationController.m in Sources */,
 				C08324811952C21900297E63 /* ProductCCell.m in Sources */,
 				C08324821952C21900297E63 /* Session.m in Sources */,
+				C018F3DE199C8254003819AB /* ZHSecurityViewController.m in Sources */,
 				C0C69DA919639F1900B7944C /* AllBaseViewController.m in Sources */,
 				C0300AA7195BC3BC00E3AC09 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				C0300AA1195BC3BC00E3AC09 /* NSManagedObject+MagicalFinders.m in Sources */,
