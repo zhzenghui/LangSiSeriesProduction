@@ -8,10 +8,11 @@
 
 #import "LSViewController.h"
 #import "TransitionHorizontalAnimationView.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 
 
-@interface LSMainViewController : LSViewController<TransitionHorizontalAnimationViewDelegate>
+@interface LSMainViewController : UIViewController<TransitionHorizontalAnimationViewDelegate>
 
 
 
@@ -25,5 +26,6 @@
 
 
 - (IBAction)enterMain:(id)sender;
+@property (strong, nonatomic) MPMoviePlayerController *videoController;
 
 @end

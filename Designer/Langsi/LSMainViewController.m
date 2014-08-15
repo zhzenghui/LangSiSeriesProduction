@@ -150,8 +150,9 @@ int i = 0;
         lsVC.view.alpha = 1;
     }];
     
-    [self.view addSubview:lsVC.view];
     [self addChildViewController:lsVC];
+
+    [self.view addSubview:lsVC.view];
 }
 
 - (void)feYeAnimation
@@ -551,7 +552,46 @@ int i = 0;
     [super viewDidLoad];
     [self startUpdates];
     
+    
+    NSString *movieFile = [[NSBundle mainBundle] pathForResource:@"lens1" ofType:@"mp4"];
+    NSURL *url = [NSURL fileURLWithPath:movieFile];
+    
+    NSLog(@"%@", [url absoluteString]);
+    
+    
+    self.videoController = [[MPMoviePlayerController alloc] init];
+    
+    [self.videoController setContentURL:url];
+    [self.videoController.view setFrame:CGRectMake (0, 0, 320, 460)];
+    [self.view addSubview:self.videoController.view];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(videoPlayBackDidFinish:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:self.videoController];
+    [self.videoController play];
+
+    
 }
+
+
+
+- (void)videoPlayBackDidFinish:(NSNotification *)notification {
+    
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
+    
+    // Stop the video player and remove it from view
+    [self.videoController stop];
+    [self.videoController.view removeFromSuperview];
+    self.videoController = nil;
+    
+    // Display a message
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Video Playback" message:@"Just finished the video playback. The video is now removed." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    
+}
+
 
 - (void)viewDidAppear:(BOOL)animated
 {

@@ -36,152 +36,19 @@
     return motionmanager;
 }
 
-
-- (void)createPhotoDir
-{
-    BOOL success;
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    
-    NSString *writableDBPath = [KDocumentDirectory stringByAppendingPathComponent:@"photo"];
-    success = [fileManager fileExistsAtPath:writableDBPath];
-    if (success) return;
-
-    success = [fileManager createDirectoryAtPath:writableDBPath withIntermediateDirectories:YES attributes:nil error:&error];
-    
-    if (success) {
-        DLog(@"create photo dir sucess");
-    }
-    
-}
-- (void)copyPhotoDir
-{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    BOOL success;
-
-    
-    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"data/photo"];
-   
-    success = [fileManager fileExistsAtPath:KDocumentDirectoryPhoto];
-    if (success) return;
-    
-    NSString *writePath =  KDocumentDirectoryPhoto;
-    
-    
-    success = [fileManager copyItemAtPath:defaultDBPath toPath:writePath error:&error];
-    if (!success) {
-        DLog(@"copy photo dir fails");
-    }
-}
-
-- (void)copyData
-{
-    
-
-    BOOL success;
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    
-    NSString *writableDBPath = [KCachesDirectory stringByAppendingPathComponent:@"files"];
-    success = [fileManager fileExistsAtPath:writableDBPath];
-    if (success) return;
-    
-    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"data/files"];
-    success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
-    if (!success) {
-        
-    }
-    
-    
-    NSString *writableDBPath1 = [KCachesDirectory stringByAppendingPathComponent:db_name];
-    
-    NSString *dbPath = [NSString stringWithFormat:@"data/%@", db_name];
-    NSString *defaultDBPath1 = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:dbPath];
-    success = [fileManager copyItemAtPath:defaultDBPath1 toPath:writableDBPath1 error:&error];
-    if (!success) {
-        
-    }
-}
-
-- (void)updateBundleId
-{
-    
-
-    
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.以来
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    
-    [IFlySetting setLogFile:LVL_ALL];
-    [IFlySetting showLogcat:YES];
-    [IFlySetting getVersion];
-
-    
-    [self copyData];
-    [self copyPhotoDir];
-    
-    [self updateBundleId];
-//    笔记的模型
-//    [MagicalRecord setupCoreDataStackWithStoreNamed:@"NoteModel"];
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"MyDatabase.sqlite"];
-    
-    
-    if ( ! iOS7) {
-        [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    }
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     
     
     
 
-    UIViewController *vc ;
-    int  themeID =  [[[Theme share]  getValueForKey:@"them_id"] intValue];
-    switch (themeID) {
-        case 0:
-        {
-           vc = [[ZHViewController alloc] init];
-            break;
-        }
-        case 1:
-        {
-            vc = [[ZHMainViewController alloc] init];
-            break;
-        }
-        case 2:
-        {
-            vc = [[M2_MainViewController alloc] initWithNibName:@"M2_MainViewController" bundle:nil];
-            break;
-        }
-        case 3:
-        {
-            vc = [[LSMainViewController alloc] initWithNibName:@"LSMainViewController" bundle:nil];
-            break;
-        }
-        default:
-            break;
-    }
+    UIViewController *vc = [[LSMainViewController alloc] initWithNibName:@"LSMainViewController" bundle:nil];
 
-
-    self.user = [[User alloc] init];
-    
-    SharedAppUser.ID  = 182891112;
-    SharedAppUser.account = @"desg_name";
-    SharedAppUser.name = @"昵称称";
-    
-    
-    
-    
-    // Override point for customization after application launch.
-    //[IFlySetting setLogFile:LVL_DETAIL];
-    //[IFlySetting showLogcat:YES];
-    
-    
-    
 
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];

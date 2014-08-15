@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C61391A1B144B6BB7025A28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6467BFAF16547DBA0CD826B /* libPods.a */; };
+		C002D851199DD551009CD7FF /* lens1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C002D850199DD551009CD7FF /* lens1.mp4 */; };
 		C00DA9D91964F07600050B30 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00DA9D81964F07600050B30 /* CustomerCell.xib */; };
 		C00DA9DA1964F07600050B30 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00DA9D81964F07600050B30 /* CustomerCell.xib */; };
 		C01065901978BF8C004B1315 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C010658F1978BF8C004B1315 /* UIView+Utilities.m */; };
@@ -532,7 +533,6 @@
 		C08325721952C8CB00297E63 /* M1_PdfPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08325711952C8CB00297E63 /* M1_PdfPopoverController.m */; };
 		C087CF6F19625282000555C6 /* NoteBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C087CF6E19625282000555C6 /* NoteBaseViewController.m */; };
 		C087CF7019625282000555C6 /* NoteBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C087CF6E19625282000555C6 /* NoteBaseViewController.m */; };
-		C088A781199CC40700A52ACB /* lens1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C088A780199CC40700A52ACB /* lens1.mp4 */; };
 		C08C33E81998AA4A00930F13 /* LSModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08C33E71998AA4A00930F13 /* LSModelViewController.xib */; };
 		C08C33EB1998BE8900930F13 /* TransitionVerticalAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */; };
 		C0A2E47D19512CE200210962 /* M1_CasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A2E47C19512CE200210962 /* M1_CasesViewController.m */; };
@@ -702,6 +702,7 @@
 
 /* Begin PBXFileReference section */
 		9290298B82A64AE9B7250C32 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C002D850199DD551009CD7FF /* lens1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lens1.mp4; sourceTree = "<group>"; };
 		C00DA9D81964F07600050B30 /* CustomerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerCell.xib; sourceTree = "<group>"; };
 		C00E750218C96EC2007AB730 /* PdfPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfPopoverController.h; sourceTree = "<group>"; };
 		C00E750318C96EC2007AB730 /* PdfPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfPopoverController.m; sourceTree = "<group>"; };
@@ -997,7 +998,6 @@
 		C08325711952C8CB00297E63 /* M1_PdfPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M1_PdfPopoverController.m; sourceTree = "<group>"; };
 		C087CF6D19625282000555C6 /* NoteBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteBaseViewController.h; path = Designer/Classes/NoteBaseViewController.h; sourceTree = SOURCE_ROOT; };
 		C087CF6E19625282000555C6 /* NoteBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteBaseViewController.m; path = Designer/Classes/NoteBaseViewController.m; sourceTree = SOURCE_ROOT; };
-		C088A780199CC40700A52ACB /* lens1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lens1.mp4; sourceTree = "<group>"; };
 		C08C33E71998AA4A00930F13 /* LSModelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSModelViewController.xib; sourceTree = "<group>"; };
 		C08C33E91998BE8900930F13 /* TransitionVerticalAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionVerticalAnimationView.h; sourceTree = "<group>"; };
 		C08C33EA1998BE8900930F13 /* TransitionVerticalAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionVerticalAnimationView.m; sourceTree = "<group>"; };
@@ -1285,7 +1285,7 @@
 		C018F3E3199C82C5003819AB /* 安全-视频 */ = {
 			isa = PBXGroup;
 			children = (
-				C088A780199CC40700A52ACB /* lens1.mp4 */,
+				C002D850199DD551009CD7FF /* lens1.mp4 */,
 				C018F3E4199C82C5003819AB /* 雅致-安全-bg@2x.png */,
 				C018F3E5199C82C5003819AB /* 雅致-安全-坐标.jpg */,
 				C018F3E6199C82C5003819AB /* 雅致-安全-文字1@2x.png */,
@@ -1629,10 +1629,10 @@
 				C04B0C8D18C43F6600CFD548 /* ActivityIndicatorView.m */,
 				C04B0C8E18C43F6600CFD548 /* BaseTableViewController.h */,
 				C04B0C8F18C43F6600CFD548 /* BaseTableViewController.m */,
-				C04B0C9018C43F6600CFD548 /* BaseViewController.h */,
-				C04B0C9118C43F6600CFD548 /* BaseViewController.m */,
 				C0C69DA619639F1900B7944C /* AllBaseViewController.h */,
 				C0C69DA719639F1900B7944C /* AllBaseViewController.m */,
+				C04B0C9018C43F6600CFD548 /* BaseViewController.h */,
+				C04B0C9118C43F6600CFD548 /* BaseViewController.m */,
 				C0D3B59B19932F9B00DCC498 /* LSViewController.h */,
 				C0D3B59C19932F9B00DCC498 /* LSViewController.m */,
 				C0300B50195BFD1B00E3AC09 /* M1_BaseViewController.h */,
@@ -2324,12 +2324,12 @@
 				C0B4DDD519985BD300347B1A /* 雅致-型号-C21@2x.png in Resources */,
 				C0B4DDD819985BD300347B1A /* 雅致-型号-P11@2x.png in Resources */,
 				C0B4DDB119985BD300347B1A /* 雅致-产品10-图片1@2x.png in Resources */,
-				C088A781199CC40700A52ACB /* lens1.mp4 in Resources */,
 				C04B0C2E18C43EAA00CFD548 /* InfoPlist.strings in Resources */,
 				C0B4DDE319985BD300347B1A /* 按钮-五金@2x.png in Resources */,
 				C0B4DDCB19985BD300347B1A /* 按钮-型号-D42@2x.png in Resources */,
 				C0B4DDE119985BD300347B1A /* 雅致-扉页-bg03@2x.png in Resources */,
 				C018F3F4199C82C5003819AB /* 雅致-安全-文字2@2x.png in Resources */,
+				C002D851199DD551009CD7FF /* lens1.mp4 in Resources */,
 				C0B4DDBB19985BD300347B1A /* 雅致-产品5-图片2@2x.png in Resources */,
 				C02BC0381988B9EA005EC171 /* M2_MainViewController.xib in Resources */,
 				C0B4DDC519985BD300347B1A /* 雅致-产品9-文字1@2x.png in Resources */,
@@ -3197,7 +3197,7 @@
 				GCC_PREFIX_HEADER = "Designer/Designer-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Designer/Designer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lifeng/Documents/192.168.1.113/code/Designer/Designer/Classes/libWeiboSDK,
@@ -3226,7 +3226,7 @@
 				GCC_PREFIX_HEADER = "Designer/Designer-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Designer/Designer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lifeng/Documents/192.168.1.113/code/Designer/Designer/Classes/libWeiboSDK,
@@ -3492,7 +3492,7 @@
 				GCC_PREFIX_HEADER = "Designer/Designer-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Designer/Designer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/lifeng/Documents/192.168.1.113/code/Designer/Designer/Classes/libWeiboSDK,

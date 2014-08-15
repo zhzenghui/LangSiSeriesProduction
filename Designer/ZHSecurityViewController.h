@@ -11,7 +11,7 @@
 
 
 
-@interface ZHSecurityViewController : UIViewController<UIScrollViewDelegate, UINavigationControllerDelegate>
+@interface ZHSecurityViewController : LSViewController<UIScrollViewDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *sv;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
