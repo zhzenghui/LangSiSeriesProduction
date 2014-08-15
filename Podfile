@@ -10,4 +10,4 @@ pod 'FMDB'
 pod 'EasyTableView'
 pod 'OpenUDID'
 pod 'pop', '~> 1.0'
- 
+pod 'ALMoviePlayerController', '~>0.3.0'
